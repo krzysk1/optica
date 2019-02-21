@@ -1,0 +1,40 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmuniverse][DynamicObjects][]
+
+            // flaps half
+            <[input_default][FlapsInput][0]
+                <[float64][Value][0.5]>
+            >
+
+            // trim
+            <[input_default][PitchTrim][0]
+                <[float64][Value][-0.02]>
+            >
+            <[input_default][AileronTrimInput][0]
+                <[float64][Value][0.01]>
+            >
+            <[servoclassic][AileronTrim][0]
+                <[float64][Position][0.01]>
+            >
+
+
+            // lights
+            <[input_switch][StrobeLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][BeaconLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][NavigationLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][LandingLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][TaxiLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+        >
+    >
+>

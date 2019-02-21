@@ -1,0 +1,56 @@
+<[file][][]
+    <[object][][]
+        <[int][Version][210]>
+        <[vec32array][ContactSpheres][ (2.267 0.2 -1.05 0.15) (-0.3759 1.7 -0.951 0.2121) (-0.3759 -1.7 -0.951 0.2121) ]>
+        <[string8][DisplayName][Edgley EA-7 Optica]>
+        <[string8][DescriptionTextEN][The Edgley EA-7 Optica is a British light aircraft designed for slow-speed observation work, and intended as a low-cost alternative to helicopters. The Optica has a cruise speed of 130 km/h (70 kn; 81 mph) and a stall speed of 108 km/h (58 kn; 67 mph). Converted from FlightGear by krzysk(at)wp.pl. 3D model by Gary "Buckaroo" Neely.]>
+		<[float64][WingSpan][12.0]>
+		<[float64][Mass][948]>
+		<[float64][MaximumSpeed][70.0]>
+		<[float64][MinimumSpeed][29.0]>
+        <[float64][ApproachSpeed][30.3]>
+        <[float64][CruiseSpeed]  [35.0]>
+		<[tmvector2d][NormalSpeedRange][ 29.0 57.5 ]>
+		<[tmvector2d][CautionSpeedRange][ 57.5 70.0 ]>
+		<[tmvector2d][FlapSpeedRange][ 28.0 55.0 ]>
+        <[float64][MaximumAltitude][4275.0]>
+        <[float64][CruiseAltitude] [1826.0]>
+        <[float64][QSpan][12.0]>
+        <[float64][QMass][1315.0]>
+        <[float64][QSpeed][57.5]>
+        <[float64][QPower][194000.0]>
+        <[float64][QThrust][0.0]>
+        <[float64][QRange][1056000.0]>
+        <[float64][QRatio][0.0]>
+        <[float64][QBuild][1300]>
+        <[float64][QVirgin][1972]>
+		<[bool][Airplane][true]>
+		<[bool][Flaps][true]>
+		<[string8][Pilot][]>
+    >
+>
+//General characteristics
+//Crew: one pilot
+//Capacity: two passengers
+//Length: 8.15 m (26 ft 9 in)
+//Wingspan: 12.0 m (39 ft 4 in)
+//Height: 2.31 m (7 ft 7 in)
+//Wing area: 15.8 m² (171 ft²)
+//Airfoil: NASA GA(W)-1
+//Empty weight: 948 kg (2,090 lb)
+//Useful load: 367 kg (810 lb)
+//Max. takeoff weight: 1,315 kg (2,900 lb)
+//Powerplant: 1 × Textron Lycoming IO-540-V4A5D flat six piston engine, 194 kW (200 hp)
+//Propellers: five bladed ducted fan propeller, 1 per engine
+
+//Performance
+//Never exceed speed: 259 km/h (140 knots, 161 mph)
+//Maximum speed: 213 km/h (115 knots, 132 mph)
+//Cruise speed: 130 km/h (70 knots, 81 mph) "loiter speed" at 40% power
+//Stall speed: 108 km/h (58 knots, 67 mph)
+//Range: 1,056 km (570 nm, 656 mi)
+//Endurance: 8 h (at loiter speed)
+//Service ceiling: 4,275 m (14,000 ft)
+//Rate of climb: 4.12 m/s (810 ft/min)
+//Wing loading: 83.0 kg/m² (17.0 lb/ft²)
+//Power/mass: 0.148 kW/kg (0.0897 hp/lb)

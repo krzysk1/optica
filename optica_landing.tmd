@@ -1,0 +1,41 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmuniverse][DynamicObjects][]
+
+            // engines
+            <[input_lever][ThrottleInput][]
+                <[float64][Value][0.42]>
+            >
+
+            // flaps full
+            <[input_default][FlapsInput][0]
+                <[float64][Value][1.0]>
+            >
+            // trim
+            <[input_default][PitchTrim][155]
+                <[float64][Value][-0.284]>
+            >
+            <[servoclassic][ServoElevator][0]
+                <[float64][Position][-0.039]>
+            >
+
+
+            // lights
+            <[input_switch][StrobeLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][BeaconLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][NavigationLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][LandingLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][TaxiLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+        >
+    >
+>
