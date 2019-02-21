@@ -1403,36 +1403,36 @@
             <[torsionlinkgraphics][LeftGearLinkUpper][]
                 <[string8][Graphics0][Fuselage]>
                 <[string8][Graphics1][StrutR]>
-                <[tmvector3f][Joint0][ -3.45 1.702 -0.432 ]>
-                <[tmvector3f][Joint1][ -3.45 1.702 -0.693 ]>
-                <[tmvector3f][Joint2][ -3.51 1.702 -0.563 ]>
+                <[tmvector3f][Joint0][ -0.45 1.702 -0.432 ]>
+                <[tmvector3f][Joint1][ -0.45 1.702 -0.693 ]>
+                <[tmvector3f][Joint2][ -0.51 1.702 -0.563 ]>
                 <[string8][GeometryList][ antitorquelu ]>
                 <[uint32][AttachTo][0]>
             >
             <[torsionlinkgraphics][LeftGearLinkLower][]
                 <[string8][Graphics0][Fuselage]>
                 <[string8][Graphics1][StrutL]>
-                <[tmvector3f][Joint0][ -3.45 1.702 -0.432 ]>
-                <[tmvector3f][Joint1][ -3.45 1.702 -0.693 ]>
-                <[tmvector3f][Joint2][ -3.51 1.702 -0.563 ]>
+                <[tmvector3f][Joint0][ -0.45 1.702 -0.432 ]>
+                <[tmvector3f][Joint1][ -0.45 1.702 -0.693 ]>
+                <[tmvector3f][Joint2][ -0.51 1.702 -0.563 ]>
                 <[string8][GeometryList][ antitorquell ]>
                 <[uint32][AttachTo][1]>
             >
             <[torsionlinkgraphics][RightGearLinkUpper][]
                 <[string8][Graphics0][Fuselage]>
                 <[string8][Graphics1][StrutR]>
-                <[tmvector3f][Joint0][ -3.45 -1.702 -0.432 ]>
-                <[tmvector3f][Joint1][ -3.45 -1.702 -0.693 ]>
-                <[tmvector3f][Joint2][ -3.51 -1.702 -0.563 ]>
+                <[tmvector3f][Joint0][ -0.45 -1.702 -0.432 ]>
+                <[tmvector3f][Joint1][ -0.45 -1.702 -0.693 ]>
+                <[tmvector3f][Joint2][ -0.51 -1.702 -0.563 ]>
                 <[string8][GeometryList][ antitorqueru ]>
                 <[uint32][AttachTo][0]>
             >
             <[torsionlinkgraphics][RightGearLinkLower][]
                 <[string8][Graphics0][Fuselage]>
                 <[string8][Graphics1][StrutR]>
-                <[tmvector3f][Joint0][ -3.45 -1.702 -0.432 ]>
-                <[tmvector3f][Joint1][ -3.45 -1.702 -0.693 ]>
-                <[tmvector3f][Joint2][ -3.51 -1.702 -0.563 ]>
+                <[tmvector3f][Joint0][ -0.45 -1.702 -0.432 ]>
+                <[tmvector3f][Joint1][ -0.45 -1.702 -0.693 ]>
+                <[tmvector3f][Joint2][ -0.51 -1.702 -0.563 ]>
                 <[string8][GeometryList][ antitorquerl ]>
                 <[uint32][AttachTo][1]>
             >
