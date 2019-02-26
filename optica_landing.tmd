@@ -4,13 +4,18 @@
 
             // engines
             <[input_lever][ThrottleInput][]
-                <[float64][Value][0.42]>
+                <[float64][Value][0.4]>
             >
 
-            // flaps full
-            <[input_default][FlapsInput][0]
+            <[input_lever][MixtureInput][0]
                 <[float64][Value][1.0]>
             >
+
+            // flaps down
+            <[input_lever][FlapsInput][0]
+                <[float64][Value][1.0]>
+            >
+
             // trim
             <[input_default][PitchTrim][155]
                 <[float64][Value][-0.284]>
@@ -18,7 +23,6 @@
             <[servoclassic][ServoElevator][0]
                 <[float64][Position][-0.039]>
             >
-
 
             // lights
             <[input_switch][StrobeLightSwitch][0]

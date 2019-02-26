@@ -4,12 +4,21 @@
 
             // engines
             <[input_lever][ThrottleInput][]
+                <[float64][Value][1.0]>
+            >
+
+            <[input_lever][MixtureInput][0]
                 <[float64][Value][0.74]>
             >
 
             // flaps up
-            <[input_default][FlapsInput][0]
-                <[float64][Value][0.0]>
+            <[input_lever][FlapsInput][0]
+                <[float64][Value][0]>
+            >
+
+            // flaps up
+            <[input_lever][FlapsInput][0]
+                <[float64][Value][0.2]>
             >
 
             // trim

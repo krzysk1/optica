@@ -2224,7 +2224,6 @@
                 <[string8][SoundFile][wind.wav]>
                 <[bool][External][false]>
             >
-
             // slip and angle of attack
             <[soundinput][SideSlip][]
                 <[uint32][InputID][SideSlip.Output]>
@@ -2252,8 +2251,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][sideslip.wav]>
                 <[bool][External][false]>
-            >
-			
+            >		
             // stall warning		
             <[soundinput][AngleOfAttack][]
                 <[uint32][InputID][AngleOfAttack.Output]>
@@ -2277,8 +2275,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][stall.wav]>
                 <[bool][External][false]>
-            >
-			
+            >			
             // prop wash
             <[soundmapping][RPMPitchWind][]
                 <[string8][Input][RotationSpeed.Output]>
