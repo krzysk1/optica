@@ -3,7 +3,8 @@
         <[int][Version][210]>
         <[vec32array][ContactSpheres][ (2.267 0.2 -1.05 0.15) (-0.3759 1.7 -0.951 0.2121) (-0.3759 -1.7 -0.951 0.2121) ]>
         <[string8][DisplayName][Edgley EA-7 Optica]>
-        <[string8][DescriptionTextEN][The Edgley EA-7 Optica is a British light aircraft designed for slow-speed observation work, and intended as a low-cost alternative to helicopters. The Optica has a cruise speed of 130 km/h (70 kn; 81 mph) and a stall speed of 108 km/h (58 kn; 67 mph). Converted from FlightGear by krzysk(at)wp.pl. 3D model by Gary "Buckaroo" Neely.]>
+        <[string8][DescriptionTextEN][The Edgley EA-7 Optica is a British light aircraft designed for slow-speed observation work, and intended as a low-cost alternative to helicopters. The Optica has a cruise speed of 130 km/h (70 kn; 81 mph) and a stall speed of 108 km/h (58 kn; 67 mph). 
+		Converted from FlightGear by Krzysztof Kaniewski. 3D model by Gary "Buckaroo" Neely.]>
 		<[float64][WingSpan][12.0]>
 		<[float64][Mass][948]>
 		<[float64][MaximumSpeed][70.0]>
