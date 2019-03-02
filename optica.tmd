@@ -1139,6 +1139,83 @@
             <[output][VerticalSpeedIndicatorNeedle][]
                 <[string8][Input][VerticalSpeedIndicator.VerticalSpeed]>
             >
+			
+            // external lights start
+
+            // strobe lights
+            <[input_switch][StrobeLightSwitch][]
+                <[string8][Input][Controls.Lighting.Strobe]>
+                <[string8][Events][ SwitchSound.Trigger ]>
+                <[string8][EventsRelease][ SwitchSound.Trigger ]>
+                <[float64][Value][1.0]>
+            >
+            <[output][StrobeLightOn][]
+                <[string8][Input][StrobeLightSwitch.Output]>
+            >
+
+            // navigation lights
+            <[input_switch][NavigationLightSwitch][]
+                <[string8][Input][Controls.Lighting.Navigation]>
+                <[string8][Events][ SwitchSound.Trigger ]>
+                <[string8][EventsRelease][ SwitchSound.Trigger ]>
+                <[float64][Value][0.0]>
+            >
+            <[output][NavigationLightOn][]
+                <[string8][Input][NavigationLightSwitch.Output]>
+            >
+			
+            // beacon light
+            <[input_switch][BeaconLightSwitch][]
+                <[string8][Input][Controls.Lighting.Beacon]>
+                <[string8][Events][ SwitchSound.Trigger ]>
+                <[string8][EventsRelease][ SwitchSound.Trigger ]>
+                <[float64][Value][0.0]>
+            >
+            <[output][BeaconLightOn][]
+                <[string8][Input][BeaconLightSwitch.Output]>
+            >
+			
+            // landing lights
+            <[input_switch][LandingLightSwitch][]
+                <[string8][Input][Controls.Lighting.Landing]>
+                <[string8][Events][ SwitchSound.Trigger ]>
+                <[string8][EventsRelease][ SwitchSound.Trigger ]>
+                <[float64][Value][0.0]>
+            >
+            <[output][LandingLightOn][]
+                <[string8][Input][LandingLightSwitch.Output]>
+            >
+			
+            // taxi lights
+            <[input_switch][TaxiLightSwitch][]
+                <[string8][Input][Controls.Lighting.Taxi]>
+                <[string8][Events][ SwitchSound.Trigger ]>
+                <[string8][EventsRelease][ SwitchSound.Trigger ]>
+                <[float64][Value][0.0]>
+            >
+            <[output][TaxiLightOn][]
+                <[string8][Input][TaxiLightSwitch.Output]>
+            >
+			
+            // external lighting end
+
+
+            // animations start
+
+            // canopy
+			
+            // switches
+			
+            // animations end
+
+            // sound events
+            <[event_sound][ButtonSound][]
+            >
+            <[event_sound][SwitchSound][]
+            >
+            <[event_sound][KnobTurnSound][]
+            >
+						
         >
         <[pointer_list_tmgraphics][GraphicObjects][]		
             <[rigidbodygraphics][Fuselage][]
@@ -1237,23 +1314,28 @@
                 <[uint32][PositionID][RightWing.R]>
                 <[uint32][OrientationID][RightWing.Q]>
             >
-            <[graphics_pointlight][airplane_nav_right][]
+			
+            // navigation lights
+            <[graphics_input][NavigationLightOn][]
+                <[uint32][InputID][NavigationLightOn.Output]>
+            >			
+            <[graphics_pointlight][RightWingTipLightGreen][]
                 <[uint32][PositionID][RightWing.R]>
                 <[uint32][OrientationID][RightWing.Q]>
                 <[tmvector3d][R0][-0.101 -6.048 0.214]>
                 <[tmvector3d][X0][ 0.7 -0.7 0.0 ]>
                 <[tmvector3d][Color][ 0.2 0.7 0.1 1.0 ]>
                 <[float64][Brightness][ 1.0 ]>
-                <[string8][InputModulation][IgnitionInput.Output]>
+                <[string8][InputModulation][NavigationLightOn.Output]>
             >
-            <[graphics_pointlight][airplane_nav_left][]
+            <[graphics_pointlight][LeftWingTipLightRed][]
                 <[uint32][PositionID][LeftWing.R]>
                 <[uint32][OrientationID][LeftWing.Q]>
                 <[tmvector3d][R0][-0.101 6.048 0.214]>
                 <[tmvector3d][X0][ 0.7 0.7 0.0 ]>
                 <[tmvector3d][Color][ 1.0 0.3 0.1 1.0 ]>
                 <[float64][Brightness][ 2.0 ]>
-                <[string8][InputModulation][IgnitionInput.Output]>
+                <[string8][InputModulation][NavigationLightOn.Output]>
             >
             <[graphics_pointlight][airplane_nav_tail][]
                 <[uint32][PositionID][Fuselage.R]>
@@ -1262,11 +1344,12 @@
                 <[tmvector3d][X0][ -1.0 0.0 0.0 ]>
                 <[tmvector3d][Color][ 0.7 0.7 1.0 1.0 ]>
                 <[float64][Brightness][ 2.0 ]>
-                <[string8][InputModulation][IgnitionInput.Output]>
+                <[string8][InputModulation][NavigationLightOn.Output]>
             >
-            <[graphics_mapping][LandingLightSwitch][]
-                <[string8][Input][Flap_Input.Output]>
-                <[tmvector2d][Map][(0.1 0.0) (0.2 1.0)]>
+			
+			// landing lights	
+            <[graphics_input][LandingLightOn][]
+                <[uint32][InputID][LandingLightOn.Output]>
             >
             <[graphics_pointlight][LandingLight1][]
                 <[uint32][PositionID][Fuselage.R]>
@@ -1278,8 +1361,13 @@
                 <[float64][Size][0.1]>
                 <[tmvector3d][Color][ 1.0 0.9 0.8 1.0 ]>
                 <[float64][Brightness][4.0]>
-                <[string8][InputModulation][LandingLightSwitch.Output]>
+                <[string8][InputModulation][LandingLightOn.Output]>
             >
+			
+			// taxi lights	
+            <[graphics_input][TaxiLightOn][]
+                <[uint32][InputID][TaxiLightOn.Output]>
+            >			
             <[graphics_pointlight][TaxiLight][]
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
@@ -1290,8 +1378,10 @@
                 <[float64][Size][0.1]>
                 <[tmvector3d][Color][ 1.0 0.9 0.8 1.0 ]>
                 <[float64][Brightness][2.0]>
-                <[string8][InputModulation][LandingLightSwitch.Output]>
+                <[string8][InputModulation][TaxiLightOn.Output]>
             >
+			
+			// flaps
             <[graphics_input][Flap_Input][]
                 <[uint32][InputID][ServoFlaps.Output]>
             >
@@ -1610,7 +1700,7 @@
                 <[string8][GeometryList][ swnav ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[uint32][AngleID][ServoIgnition.Output]>
+                <[uint32][AngleID][NavigationLightOn.Output]>
                 <[float64][AngleMax][0.872665]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][1.95 0 0.444]>
@@ -1619,7 +1709,7 @@
                 <[string8][GeometryList][ swtail ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[uint32][AngleID][ServoIgnition.Output]>
+                <[uint32][AngleID][BeaconLightOn.Output]>
                 <[float64][AngleMax][0.872665]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][1.95 0 0.444]>
@@ -1628,7 +1718,7 @@
                 <[string8][GeometryList][ swlanding ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[uint32][InputAngle][LandingLightSwitch.Output]>
+                <[uint32][InputAngle][LandingLightOn.Output]>
                 <[float64][AngleMax][0.872665]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][1.95 0 0.444]>
@@ -1637,7 +1727,7 @@
                 <[string8][GeometryList][ swtaxi ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[uint32][InputAngle][LandingLightSwitch.Output]>
+                <[uint32][InputAngle][TaxiLightOn.Output]>
                 <[float64][AngleMax][0.872665]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][1.95 0 0.444]>
