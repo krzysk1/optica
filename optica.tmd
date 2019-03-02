@@ -1147,7 +1147,7 @@
                 <[string8][Input][Controls.Lighting.Strobe]>
                 <[string8][Events][ SwitchSound.Trigger ]>
                 <[string8][EventsRelease][ SwitchSound.Trigger ]>
-                <[float64][Value][1.0]>
+                <[float64][Value][0.0]>
             >
             <[output][StrobeLightOn][]
                 <[string8][Input][StrobeLightSwitch.Output]>
