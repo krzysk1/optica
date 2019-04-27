@@ -219,22 +219,22 @@
             >
             <[jointlinear][JointFuselageLeftGear][]
                 <[tmvector3d][R0][-0.38 1.7 0.045]>
-                <[float64][Kfx][2466480.0]>
-                <[float64][Kfy][2466480.0]>
-                <[float64][Kfz][154000.0]>
-                <[float64][Dfx][168.0]>
-                <[float64][Dfy][168.0]>
-                <[float64][Dfz][228.0]>
-                <[float64][Ktx][81000.0]>
-                <[float64][Kty][51000.0]>
-                <[float64][Ktz][81000.0]>
-                <[float64][Dtx][48.0]>
-                <[float64][Dty][48.0]>
-                <[float64][Dtz][48.0]>
+                <[float64][Kfx][2000000.0]>
+                <[float64][Kfy][2000000.0]>
+                <[float64][Kfz][70000.0]>
+                <[float64][Dfx][200.0]>
+                <[float64][Dfy][200.0]>
+                <[float64][Dfz][2000.0]>
+                <[float64][Ktx][100000.0]>
+                <[float64][Kty][100000.0]>
+                <[float64][Ktz][100000.0]>
+                <[float64][Dtx][200.0]>
+                <[float64][Dty][200.0]>
+                <[float64][Dtz][200.0]>
+                <[float64][ForceMax][300000.0]>
+                <[float64][TorqueMax][300000.0]>
                 <[string8][Body0][Fuselage]>
                 <[string8][Body1][LeftGear]>
-                <[float64][ForceMax][95000000.0]>
-                <[float64][TorqueMax][950000.0]>
             >
             <[rigidbody][RightGear][]
                 <[float64][Mass][15]>
@@ -244,22 +244,22 @@
             >
             <[jointlinear][JointFuselageRightGear][]
                 <[tmvector3d][R0][-0.38 -1.7 0.045]>
-                <[float64][Kfx][2466480.0]>
-                <[float64][Kfy][2466480.0]>
-                <[float64][Kfz][154000.0]>
-                <[float64][Dfx][168.0]>
-                <[float64][Dfy][168.0]>
-                <[float64][Dfz][228.0]>
-                <[float64][Ktx][81000.0]>
-                <[float64][Kty][51000.0]>
-                <[float64][Ktz][81000.0]>
-                <[float64][Dtx][48.0]>
-                <[float64][Dty][48.0]>
-                <[float64][Dtz][48.0]>
+                <[float64][Kfx][2000000.0]>
+                <[float64][Kfy][2000000.0]>
+                <[float64][Kfz][70000.0]>
+                <[float64][Dfx][200.0]>
+                <[float64][Dfy][200.0]>
+                <[float64][Dfz][2000.0]>
+                <[float64][Ktx][100000.0]>
+                <[float64][Kty][100000.0]>
+                <[float64][Ktz][100000.0]>
+                <[float64][Dtx][200.0]>
+                <[float64][Dty][200.0]>
+                <[float64][Dtz][200.0]>
+                <[float64][ForceMax][300000.0]>
+                <[float64][TorqueMax][300000.0]>
                 <[string8][Body0][Fuselage]>
                 <[string8][Body1][RightGear]>
-                <[float64][ForceMax][95000000.0]>
-                <[float64][TorqueMax][950000.0]>
             >
             <[collisionhull][CollisionFrontGear][]
                 <[float64][K][500000.0]>
@@ -1913,7 +1913,7 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][HeadingAngle.Output]>
-                <[float64][AngleMax][-0.017453]>
+                <[float64][AngleMax][0.017453]>
                 <[tmvector3d][Axis][-0.965926 0.0 0.258819]>
                 <[tmvector3d][Pivot][2.092 0.285 -0.07]>
             >
@@ -2026,7 +2026,7 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][HeadingAngle.Output]>
-                <[float64][AngleMax][-0.017453]>
+                <[float64][AngleMax][0.017453]>
                 <[tmvector3d][Axis][-0.965926 0.0 0.258819]>
                 <[tmvector3d][Pivot][2.071 0.37 -0.153]>
             >
@@ -2243,7 +2243,6 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][HeadingAngle.Output]>
-                <[float64][AngleMax][-1.0]>
                 <[tmvector3d][Axis][0.0 0.0 1.0]>
                 <[tmvector3d][Pivot][2.456 0 0.32]>
             >
