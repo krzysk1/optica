@@ -17,7 +17,6 @@
                 <[string8][Airspeed][AirspeedIndicator.IndicatedAirspeed]>
                 <[string8][BrakePosition][BrakeInput.Output]>
                 <[string8][FlapPosition][FlapsInput.Output]>
-                <[tmvector2d][FlapPositions][(0.0 0.0) (0.5 0.1) (1.0 0.5)]>
                 <[tmvector3d][LookAtPosition][0 0 0.0]>
             >
             <[camera][CameraFollow][]

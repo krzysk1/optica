@@ -25,33 +25,10 @@ Converted from FlightGear by Krzysztof Kaniewski. 3D model by Gary "Buckaroo" Ne
         <[float64][QRatio][0.0]>
         <[float64][QBuild][22]>
         <[float64][QVirgin][1979]>
+        <[tmvector2d][FlapSettings][ (0.0 0.0) (0.2 0.087266) (0.5 0.174533) (1.0 0.872665) ]>
+        <[string8][FlapQualifier][]>		
 		<[bool][Airplane][true]>
 		<[bool][Flaps][true]>
 		<[string8][Pilot][]>
     >
 >
-//General characteristics
-//Crew: one pilot
-//Capacity: two passengers
-//Length: 8.15 m (26 ft 9 in)
-//Wingspan: 12.0 m (39 ft 4 in)
-//Height: 2.31 m (7 ft 7 in)
-//Wing area: 15.8 m² (171 ft²)
-//Airfoil: NASA GA(W)-1
-//Empty weight: 948 kg (2,090 lb)
-//Useful load: 367 kg (810 lb)
-//Max. takeoff weight: 1,315 kg (2,900 lb)
-//Powerplant: 1 × Textron Lycoming IO-540-V4A5D flat six piston engine, 194 kW (200 hp)
-//Propellers: five bladed ducted fan propeller, 1 per engine
-
-//Performance
-//Never exceed speed: 259 km/h (140 knots, 161 mph)
-//Maximum speed: 213 km/h (115 knots, 132 mph)
-//Cruise speed: 130 km/h (70 knots, 81 mph) "loiter speed" at 40% power
-//Stall speed: 108 km/h (58 knots, 67 mph)
-//Range: 1,056 km (570 nm, 656 mi)
-//Endurance: 8 h (at loiter speed)
-//Service ceiling: 4,275 m (14,000 ft)
-//Rate of climb: 4.12 m/s (810 ft/min)
-//Wing loading: 83.0 kg/m² (17.0 lb/ft²)
-//Power/mass: 0.148 kW/kg (0.0897 hp/lb)
