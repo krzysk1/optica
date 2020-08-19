@@ -88,7 +88,7 @@
                 <[float64][Length][0.093]>
             >			
 			
-			// Throttle lever
+			// throttle lever
             <[control_input][ThrottleLeverInput][]
                 <[uint32][InputID][ServoThrottle.Output]>
                 <[float64][Scaling][1.570796]>						
@@ -113,7 +113,7 @@
                 <[float64][Radius][0.013]>
                 <[float64][Length][0.035]>
             >
-			// Mixture lever
+			// mixture lever
             <[control_input][MixtureLeverInput][]
                 <[uint32][InputID][ServoMixture.Output]>
                 <[float64][Scaling][1.570796]>						
@@ -137,8 +137,7 @@
                 >
                 <[float64][Radius][0.013]>
                 <[float64][Length][0.035]>
-            >
-			
+            >			
         >
     >
 >
