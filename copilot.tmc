@@ -1,44 +1,43 @@
 <[file][][]
     <[hints][][]
-        // Optica
-        <[float64][MaximumTakeOffMass][933.5]>
-        <[float64][WingSpan][11.88]>
-        <[float64][WingArea][18.5]>
-        <[float64][HeightOffset][-0.8249]>
-        <[float64][NoseWheelPositionX][2.285]>
-        <[float64][ApproachSpeed][46.3]>
-        <[float64][PatternSpeed][61.7]>
+        // Edgley Optica
+        <[float64][MaximumTakeOffMass][1315.0]>
+        <[float64][WingSpan][12.0]>
+        <[float64][WingArea][15.84]>
+        <[float64][HeightOffset][-1.05]>
+        <[float64][NoseWheelPositionX][2.267]>
+        <[float64][ApproachSpeed][30.3]>
+        <[float64][PatternSpeed][45.0]>
         <[float64][InitialClimbSpeed][51.4]>
         <[copilot_flap_info_list][FlapInfo][]
            <[copilot_flap_info][FlapUp][]
               <[float64][FlapPosition][0.0]>
-              <[float64][MinimumSpeed][43.7]>
-              <[float64][OptimumSpeed][61.73]>
-              <[float64][MaximumSpeed][115.7]>
+              <[float64][MinimumSpeed][29.0]>
+              <[float64][OptimumSpeed][51.73]>
+              <[float64][MaximumSpeed][70.0]>
               <[bool][TakeOff][true]>
               <[bool][Landing][true]>
            >
            <[copilot_flap_info][FlapApproach][]
               <[float64][FlapPosition][0.5]>
-              <[float64][MinimumSpeed][40.0]>
-              <[float64][OptimumSpeed][51.4]>
-              <[float64][MaximumSpeed][62.7]>
+              <[float64][MinimumSpeed][29.0]>
+              <[float64][OptimumSpeed][41.4]>
+              <[float64][MaximumSpeed][52.7]>
               <[bool][TakeOff][true]>
               <[bool][Landing][true]>
            >
            <[copilot_flap_info][FlapFull][]
               <[float64][FlapPosition][1.0]>
-              <[float64][MinimumSpeed][38.5]>
-              <[float64][OptimumSpeed][46.29]>
-              <[float64][MaximumSpeed][62.7]>
+              <[float64][MinimumSpeed][29.0]>
+              <[float64][OptimumSpeed][36.29]>
+              <[float64][MaximumSpeed][42.7]>
               <[bool][Landing][true]>
            >
         >
         <[string8][AutoPilotType][BASIC]>
-        <[bool][Aerobatic][false]>
-        <[bool][Fighter][false]>
-        <[bool][FlyByWire][false]>
-        <[bool][TailDragger][false]>
+        <[int][EngineCount][1]>
+        <[bool][Piston][true]>
+        <[bool][GeneralAviation][true]>
         <[bool][ParkingBrake][true]>
         <[string8][AutoThrottleType][MOVING]>
         <[float64][ThrottleTrimFactor][0.5]>
