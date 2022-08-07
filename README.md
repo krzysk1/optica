@@ -1,15 +1,15 @@
 # optica
 The Edgley EA-7 Optica is a British light aircraft designed for slow-speed observation work, and intended as a low-cost alternative to helicopters. The Optica has a cruise speed of 130 km/h (70 kn; 81 mph) and a stall speed of 108 km/h (58 kn; 67 mph) (From Wikipedia, the free encyclopedia)
 
-This free add-on for AeroflyFS1 2015, and then for AeroflyFS2 2019 was developed by Krzysztof Kaniewski, 
+This free add-on for AeroflyFS1 2015, then for AeroflyFS2 2019, and then for AeroflyFS4 2022 was developed by Krzysztof Kaniewski,
 Original 3D model was created by Gary "Buckaroo" Neely, Sept 2011. Thanks to him
  
- Some features may not work as intended and this aircraft could crash your aerofly FS2. 
+ Some features may not work as intended and this aircraft could crash your Aerofly FS4. 
  Use it at your own risk!
 
 Installation
 
-1. Unzip file and move the folder "optica" to C:\Users\~\Documents\Aerofly FS2\aircraft.
+1. Unzip file and move the folder "optica" to C:\Users\~\Documents\Aerofly FS4\aircraft.
 
 ========================================================================================================================
 Readme.txt from Gary "Buckaroo" Neely
