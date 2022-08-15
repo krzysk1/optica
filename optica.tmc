@@ -3,7 +3,7 @@
         <[int][Version][220]>
         <[vec32array][ContactSpheres][ (2.267 0.2 -1.05 0.15) (-0.3759 1.7 -0.951 0.2121) (-0.3759 -1.7 -0.951 0.2121) ]>
         <[string8][ICAO][OPCA]>
-        <[string8][DisplayName][Edgley Optica]>
+        <[string8][DisplayName][Optica]>
         <[string8][DisplayNameFull][Edgley EA-7 Optica]>
         <[localized_text_list][Descriptions][]
             <[localized_text][][]
