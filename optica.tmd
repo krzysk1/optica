@@ -4,7 +4,7 @@
 	// 3D model by Gary "Buckaroo" Neely
 	// Converted from FlightGear by krzysk(at)wp.pl
 	// The model is currently licensed under Creative Commons "CC-BY-NC-SA"
-	// Date: Nov 2015 to Aug 2022 (Aerofly FS4)  
+	// Date: Nov 2015 to Aug 2022 (Aerofly FS4)
 	// mass: 1155.2  cm=(0.143 0.002 0.043)
 	//-------------------------------------
 
@@ -20,18 +20,20 @@
                 <[tmvector3d][Direction][ 0.965 0.0 -0.2622 ]>
             >
             <[camera_head][CameraPilot][]
-                <[string8][Tags][cockpit Pilot left]>
+                <[string8][Tags][cockpit pilot left]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][1.5 0.48 0.35]>
                 <[tmvector3d][Direction][0.99 0.0 -0.2]>
                 <[bool][InCockpit][true]>
+                <[bool][Overhead][true]>
             >
             <[camera_head][CameraCopilot][]
-                <[string8][Tags][cockpit Pilot right]>
+                <[string8][Tags][cockpit pilot right]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][1.5 0 0.2]>
                 <[tmvector3d][Direction][1.0 0.0 0.0]>
                 <[bool][InCockpit][true]>
+                <[bool][Overhead][true]>
             >
             <[camera][CameraLeftSide][]
                 <[string8][Tags][left wing]>

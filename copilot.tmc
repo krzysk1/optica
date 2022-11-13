@@ -49,8 +49,11 @@
         <[bool][RudderTrimRequired][true]>
         <[float64][RudderSteeringGain][0.5]>
         <[float64][RudderCrossWind][1.5]>
-        <[float64][YawTrimFactor][0.1]>
         <[float64][FlareHeightScaling][0.5]>
-        <[float64][FlareExpectedNoseDrop][0.1]>
+        <[float64][FlareExpectedNoseDrop][0.45]>
+        <[float64][GainSideSlipRoll][2.0]>
+        <[float64][StarterMaximumTime][3.0]>
+        <[float64][RotationSpeedNormalizedClimb] [1.0]>
+        <[float64][RotationSpeedNormalizedCruise][0.923]>
     >
 >

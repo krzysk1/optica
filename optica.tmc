@@ -3,21 +3,25 @@
         <[int][Version][220]>
         <[vec32array][ContactSpheres][ (2.267 0.2 -1.05 0.15) (-0.3759 1.7 -0.951 0.2121) (-0.3759 -1.7 -0.951 0.2121) ]>
         <[string8][ICAO][OPCA]>
-        <[string8][DisplayName][Optica]>
+        <[string8][DisplayName][Edgley Optica]>
         <[string8][DisplayNameFull][Edgley EA-7 Optica]>
         <[localized_text_list][Descriptions][]
             <[localized_text][][]
                 <[string8][Language][en]>
                 <[string8][Text][The Edgley EA-7 Optica is a British light aircraft designed for slow-speed observation work, and intended as a low-cost alternative to helicopters. The Optica has a cruise speed of 130 km/h (70 kn; 81 mph) and a stall speed of 108 km/h (58 kn; 67 mph). Converted from FlightGear by Krzysztof Kaniewski. 3D model by Gary "Buckaroo" Neely.]>
             >
+            <[localized_text][][]
+                <[string8][Language][de]>
+                <[string8][Text][Die Edgley EA7 Optica ist ein Flugzeug des britischen Herstellers Edgley Aircraft. Das auffällige Aussehen des Cockpits beruht auf seiner Bestimmung als Luftbeobachtungsflugzeug. Bei der Auslegung lag der Schwerpunkt auf guten Langsamflugeigenschaften sowie optimalen Sichtverhältnissen für die Besatzung. Konvertiert von FlightGear durch Krzysztof Kaniewski. 3d-Modell erstellt von Gary "Buckaroo" Neely.]>
+			>
         >
 		<[float64][WingSpan][12.0]>
 		<[float64][MaximumAirspeed][70.0]>
-		<[float64][MaximumSpeed][70.0]>		
+		<[float64][MaximumSpeed][70.0]>
 		<[float64][MinimumAirspeed][29.0]>
         <[float64][ApproachAirspeed][30.3]>
         <[float64][CruiseAirspeed][35.0]>
-        <[float64][CruiseSpeed][65.0]>		
+        <[float64][CruiseSpeed][65.0]>
 		<[tmvector2d][NormalAirspeedRange][ 29.0 57.5 ]>
 		<[tmvector2d][CautionAirspeedRange][ 57.5 70.0 ]>
 		<[tmvector2d][FlapAirspeedRange][ 28.0 55.0 ]>
@@ -30,7 +34,7 @@
         <[uint][EngineCount][1]>
         <[uint][Year][1979]>
         <[tmvector2d][FlapSettings][ (0.0 0.0) (0.333 0.087266) (0.666 0.174533) (1.0 0.872665) ]>
-        <[string8][FlapQualifier][]>		
+        <[string8][FlapQualifier][]>
         <[string8][Tags][ airplane piston general_aviation gear flaps ]>
 		<[string8][Pilot][]>
     >
