@@ -5,14 +5,13 @@
 	// Converted from FlightGear by krzysk(at)wp.pl
 	// The model is currently licensed under Creative Commons "CC-BY-NC-SA"
 	// Date: Nov 2015 to Aug 2022 (Aerofly FS4)
-	// mass: 1155.2  cm=(0.143 0.002 0.043)
 	//-------------------------------------
 
     <[modelmanager][][]
         <[pointer_list_tmuniverse][DynamicObjects][]
             <[telemetry][Telemetry][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][LookAtPosition][0 0 0.0]>
+                <[tmvector3d][LookAtPosition][0 0 0.0]> //mass: 1155.2  cm=(0.009 0.002 0.029)
             >
             <[camera][CameraFollow][]
                 <[string8][Body][Fuselage]>
@@ -54,9 +53,9 @@
                 <[tmvector3d][Direction][ -0.9107 -0.2921 -0.2921 ]>
             >
             <[rigidbody][Fuselage][]
-                <[float64][Mass][320.3]>
-                <[tmvector3d][InertiaLength][-5.08 1.6 1.6]>
-                <[tmvector3d][R0][0.45 0 0.05]>
+                <[float64][Mass][270.3]>
+                <[tmvector3d][InertiaLength][5.0 1.6 1.6]>
+                <[tmvector3d][R0][0.5 0 0.0]>
                 <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
             >
             <[rigidbody][LeftWing][]
@@ -135,7 +134,7 @@
                 <[uint32][Type][1]>
             >
             <[rigidbody][EngineBody][]
-                <[float64][Mass][199.3]>
+                <[float64][Mass][249.3]>
                 <[tmvector3d][InertiaLength][ 0.9 0.7 0.4 ]>
                 <[tmvector3d][R0][-1.3 0 0]>
                 <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
@@ -419,9 +418,9 @@
                 <[float64][Area][1.651]>
                 <[string8][Flap0Control][ServoFlapsAero.Output]>
                 <[float64array][StationY]           [ 0.84 1.883 ]>
-                <[float64array][StationLE][0.45 0.45]>
-                <[float64array][StationTE][-1.133 -1.133]>
-                <[float64array][StationZ][0.06 0.06]>
+                <[float64array][StationLE]          [0.45 0.45]>
+                <[float64array][StationTE]          [-1.133 -1.133]>
+                <[float64array][StationZ]           [0.06 0.06]>
                 <[float64array][StationIncidence]   [ 0.0 0.0 ]>
                 <[uint32array][StationFlap]         [ 1 0 ]>
                 <[float64array][StationFlapFraction][ 0.3 0.0 ]>
@@ -439,9 +438,9 @@
                 <[float64][Area][1.651]>
                 <[string8][Flap0Control][ServoFlapsAero.Output]>
                 <[float64array][StationY]           [ -1.883 -0.84 ]>
-                <[float64array][StationLE][0.45 0.45]>
-                <[float64array][StationTE][-1.133 -1.133]>
-                <[float64array][StationZ][0.06 0.06]>
+                <[float64array][StationLE]          [0.45 0.45]>
+                <[float64array][StationTE]          [-1.133 -1.133]>
+                <[float64array][StationZ]           [0.06 0.06]>
                 <[float64array][StationIncidence]   [ 0.0 0.0 ]>
                 <[uint32array][StationFlap]         [ 1 0 ]>
                 <[float64array][StationFlapFraction][ 0.3 0.0 ]>
@@ -460,9 +459,9 @@
                 <[string8][Flap0Control][ServoFlapsAero.Output]>
                 <[string8][Flap1Control][ServoLeftAileron.Output]>
                 <[float64array][StationY]           [ 1.866 3.9 5.9344 ]>
-                <[float64array][StationLE][0.45 0.45 0.45]>
-                <[float64array][StationTE][-0.92 -0.92 -0.92]>
-                <[float64array][StationZ][0.06 0.1666 0.2732]>
+                <[float64array][StationLE]          [0.45 0.45 0.45]>
+                <[float64array][StationTE]          [-0.92 -0.92 -0.92]>
+                <[float64array][StationZ]           [0.06 0.1666 0.2732]>
                 <[float64array][StationIncidence]   [ 0.0 -0.02618 -0.0523 ]>
                 <[uint32array][StationFlap]         [ 1 2 0 ]>
                 <[float64array][StationFlapFraction][ 0.2 0.2 0.0 ]>
@@ -481,9 +480,9 @@
                 <[string8][Flap0Control][ServoFlapsAero.Output]>
                 <[string8][Flap1Control][ServoRightAileron.Output]>
                 <[float64array][StationY]           [ -5.9344 -3.9 -1.866 ]>
-                <[float64array][StationLE][0.45 0.45 0.45]>
-                <[float64array][StationTE][-0.92 -0.92 -0.92]>
-                <[float64array][StationZ][0.2732 0.1666 0.06]>
+                <[float64array][StationLE]          [0.45 0.45 0.45]>
+                <[float64array][StationTE]          [-0.92 -0.92 -0.92]>
+                <[float64array][StationZ]           [0.2732 0.1666 0.06]>
                 <[float64array][StationIncidence]   [ -0.0523 -0.026 0.0 ]>
                 <[uint32array][StationFlap]         [ 2 1 0 ]>
                 <[float64array][StationFlapFraction][ 0.2 0.2 0.0 ]>
@@ -501,10 +500,10 @@
                 <[float64][Area][1.338]>
                 <[string8][Flap0Control][ServoElevator.Output]>
                 <[float64array][StationY]           [ 0.0 1.161 ]>
-                <[float64array][StationLE][-3.7845 -3.7845]>
-                <[float64array][StationTE][-4.9375 -4.9375]>
-                <[float64array][StationZ][1.453 1.453]>
-                <[float64array][StationIncidence]   [ 0.0 0.0 ]>
+                <[float64array][StationLE]          [-3.7845 -3.7845]>
+                <[float64array][StationTE]          [-4.9375 -4.9375]>
+                <[float64array][StationZ]           [1.453 1.453]>
+                <[float64array][StationIncidence]   [ 0.034 0.034 ]>
                 <[uint32array][StationFlap]         [ 1 0 ]>
                 <[float64array][StationFlapFraction][ 0.5 0.0 ]>
                 <[float64][AspectRatioMultiplier][2]>
@@ -524,10 +523,10 @@
                 <[float64][Area][1.338]>
                 <[string8][Flap0Control][ServoElevator.Output]>
                 <[float64array][StationY]           [ -1.161 0.0 ]>
-                <[float64array][StationLE][-3.7845 -3.7845]>
-                <[float64array][StationTE][-4.9375 -4.9375]>
-                <[float64array][StationZ][1.453 1.453]>
-                <[float64array][StationIncidence]   [ 0.0 0.0 ]>
+                <[float64array][StationLE]          [-3.7845 -3.7845]>
+                <[float64array][StationTE]          [-4.9375 -4.9375]>
+                <[float64array][StationZ]           [1.453 1.453]>
+                <[float64array][StationIncidence]   [ 0.034 0.034 ]>
                 <[uint32array][StationFlap]         [ 1 0 ]>
                 <[float64array][StationFlapFraction][ 0.5 0.0 ]>
                 <[float64][AspectRatioMultiplier][2]>
@@ -547,9 +546,9 @@
                 <[float64][Area][1.723]>
                 <[string8][Flap0Control][ServoRudder.Output]>
                 <[float64array][StationY]           [ 1.68 1.271322 ]>
-                <[float64array][StationLE][-3.5065 -3.699327]>
-                <[float64array][StationTE][-5.0935 -4.857837]>
-                <[float64array][StationZ][0.133 1.3199]>
+                <[float64array][StationLE]          [-3.5065 -3.699327]>
+                <[float64array][StationTE]          [-5.0935 -4.857837]>
+                <[float64array][StationZ]           [0.133 1.3199]>
                 <[float64array][StationIncidence]   [ 0.0 0.0 ]>
                 <[uint32array][StationFlap]         [ 1 0 ]>
                 <[float64array][StationFlapFraction][ 0.5 0.0 ]>
@@ -565,9 +564,9 @@
                 <[float64][Area][1.723]>
                 <[string8][Flap0Control][ServoRudder.Output]>
                 <[float64array][StationY]           [ -1.68 -1.271322 ]>
-                <[float64array][StationLE][-3.5065 -3.742163]>
-                <[float64array][StationTE][-5.0935 -4.900673]>
-                <[float64array][StationZ][0.133 1.3199]>
+                <[float64array][StationLE]          [-3.5065 -3.742163]>
+                <[float64array][StationTE]          [-5.0935 -4.900673]>
+                <[float64array][StationZ]           [0.133 1.3199]>
                 <[float64array][StationIncidence]   [ 0.0 0.0 ]>
                 <[uint32array][StationFlap]         [ 1 0 ]>
                 <[float64array][StationFlapFraction][ 0.5 0.0 ]>
@@ -1223,7 +1222,7 @@
         >
         <[pointer_list_tmgraphics][GraphicObjects][]
             <[rigidbodygraphics][Fuselage][]
-                <[string8][GeometryList][ Breakers Cabin CabinFloor CabinFloorCarpet CabinFloorWells ColumnPlates DuctEngine Empennage Extinguisher FrictionWheel LGStruts LampLanding LampTaxi PanelOH PedalAxle PedalShaft Seats ThrottleQuad ThrottleQuadLit Wing LampTailOn ]>
+                <[string8][GeometryList][ Antenna Breakers Cabin CabinFloor CabinFloorCarpet CabinFloorWells ColumnPlates DuctEngine Empennage Extinguisher FrictionWheel LGStruts LampLanding LampTaxi PanelOH PedalAxle PedalShaft Seats ThrottleQuad ThrottleQuadLit Wing LampTailOn ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
