@@ -33,7 +33,7 @@
         <[uint][UnitsBuilt][22]>
         <[uint][EngineCount][1]>
         <[uint][Year][1979]>
-        <[tmvector2d][FlapSettings][ (0.0 0.0) (0.333 0.087266) (0.666 0.174533) (1.0 0.872665) ]>
+        <[tmvector2d][FlapSettings][ (0.0 0.0) (0.2 0.174533) (0.4 0.349066) (0.6 0.523599) (0.8 0.698132) (1.0 0.872665) ]>		
         <[string8][FlapQualifier][]>
         <[string8][Tags][ airplane piston general_aviation gear flaps ]>
 		<[string8][Pilot][]>

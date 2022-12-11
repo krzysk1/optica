@@ -416,7 +416,7 @@
                 <[string8][Body][Fuselage]>
                 <[float64][Span][1.043]>
                 <[float64][Area][1.651]>
-                <[string8][Flap0Control][ServoFlapsAero.Output]>
+            //    <[string8][Flap0Control][ServoFlapsAero.Output]>
                 <[float64array][StationY]           [ 0.84 1.883 ]>
                 <[float64array][StationLE]          [0.45 0.45]>
                 <[float64array][StationTE]          [-1.133 -1.133]>
@@ -436,7 +436,7 @@
                 <[string8][Body][Fuselage]>
                 <[float64][Span][1.043]>
                 <[float64][Area][1.651]>
-                <[string8][Flap0Control][ServoFlapsAero.Output]>
+      //          <[string8][Flap0Control][ServoFlapsAero.Output]>
                 <[float64array][StationY]           [ -1.883 -0.84 ]>
                 <[float64array][StationLE]          [0.45 0.45]>
                 <[float64array][StationTE]          [-1.133 -1.133]>
@@ -695,12 +695,12 @@
             <[input_default][FlapsInput][]
                 <[string8][Message][Controls.Flaps]>
                 <[tmvector2d][Range][ 0.0 1.0 ]>
-                <[uint][Positions][4]>
+                <[uint][Positions][6]>
                 <[float64][Value][0.0]>
             >
             <[linear_interpolation][FlapsMapping][]
                 <[string8][Input][FlapsInput.Output]>
-                <[tmvector2d][Map][ (0.0 0.0) (0.333 0.087266) (0.666 0.174533) (1.0 0.872665) ]>
+                <[tmvector2d][Map][ (0.0 0.0) (0.2 0.174533) (0.4 0.349066) (0.6 0.523599) (0.8 0.698132) (1.0 0.872665) ]>
             >
             <[sender][SenderFlapPosition][]
                 <[string8][Input][FlapsMapping.Output]>
@@ -908,8 +908,8 @@
                 <[string8][Input][FlapsInput.Output]>
                 <[float64][OutputSpeed][0.2]>
                 <[float64][Position][0.0]>
-                <[float64array][InputPosition][ 0.0 0.2 0.5 1.0 ]>
-                <[float64array][OutputPosition][ 0.0 0.087266 0.174533 0.872665 ]>
+                <[float64array][InputPosition][ 0.0 0.20 0.40 0.60 0.80 1.00 ]>
+                <[float64array][OutputPosition][ 0.000000 0.174533 0.349066 0.523599 0.698132 0.872665 ]>
             >
             <[output_free][ServoFlapsAeroOutput][]
                 <[string8][Input][ServoFlapsAero.Output]>
@@ -2500,6 +2500,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][prop1_inn.wav]>
                 <[bool][External][false]>
+                <[tmvector3d][R0][-0.6 0 0.0]>				
             >
             <[soundloop][RPMWindLoopExt][]
                 <[string8][InputVolume][RPMVolumeWind.Output]>
@@ -2508,6 +2509,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][prop1_out.wav]>
                 <[bool][Internal][false]>
+                <[tmvector3d][R0][-0.6 0 0.0]>				
             >
             // starter cranking
             <[soundinput][IgnitionSoundInput][]
@@ -2529,6 +2531,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][cranking.wav]>
                 <[bool][External][false]>
+                <[tmvector3d][R0][-0.8 0 0.0]>				
             >
             <[sound_multi][IgnitionSoundExt][]
                 <[string8][InputTrigger][IgnitionSoundInput.Output]>
@@ -2538,6 +2541,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][cranking.wav]>
                 <[bool][Internal][false]>
+                <[tmvector3d][R0][-0.8 0 0.0]>				
             >
             // engine loop
             <[soundinput][RotationSpeed][]
@@ -2565,6 +2569,7 @@
                 // <[uint32][PositionID][Fuselage.R]>
                 // <[uint32][VelocityID][Fuselage.V]>
                 // <[string8][SoundFile][engine_idle.wav]>
+                // <[tmvector3d][R0][-0.8 0 0.0]>				
             // >
             <[soundloop][RPMRunLoopInt][]
                 <[string8][InputVolume][RPMVolumeRun.Output]>
@@ -2573,6 +2578,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][engine_running.wav]>
                 <[bool][External][false]>
+                <[tmvector3d][R0][-0.8 0 0.0]>				
             >
             <[soundloop][RPMRunLoopExt][]
                 <[string8][InputVolume][RPMVolumeRun.Output]>
@@ -2581,6 +2587,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][engine_running.wav]>
                 <[bool][Internal][false]>
+                <[tmvector3d][R0][-0.8 0 0.0]>				
             >
             // wheels
             <[soundinput][GroundRollLoadFront][]
