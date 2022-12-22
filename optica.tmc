@@ -13,29 +13,31 @@
             <[localized_text][][]
                 <[string8][Language][de]>
                 <[string8][Text][Die Edgley EA7 Optica ist ein Flugzeug des britischen Herstellers Edgley Aircraft. Das auffällige Aussehen des Cockpits beruht auf seiner Bestimmung als Luftbeobachtungsflugzeug. Bei der Auslegung lag der Schwerpunkt auf guten Langsamflugeigenschaften sowie optimalen Sichtverhältnissen für die Besatzung. Konvertiert von FlightGear durch Krzysztof Kaniewski. 3d-Modell erstellt von Gary "Buckaroo" Neely.]>
-			>
+            >
         >
-		<[float64][WingSpan][12.0]>
-		<[float64][MaximumAirspeed][70.0]>
-		<[float64][MaximumSpeed][70.0]>
-		<[float64][MinimumAirspeed][29.0]>
-        <[float64][ApproachAirspeed][30.3]>
-        <[float64][CruiseAirspeed][35.0]>
-        <[float64][CruiseSpeed][65.0]>
-		<[tmvector2d][NormalAirspeedRange][ 29.0 57.5 ]>
-		<[tmvector2d][CautionAirspeedRange][ 57.5 70.0 ]>
-		<[tmvector2d][FlapAirspeedRange][ 28.0 55.0 ]>
-        <[float64][MaximumAltitude][4275.0]>
-        <[float64][CruiseAltitude][1826.0]>
         <[float64][MaximumTakeoffMass][1315.0]>
-        <[float64][EnginePower][194000.0]>
-        <[float64][MaximumRange][1056000.0]>
-        <[uint][UnitsBuilt][22]>
-        <[uint][EngineCount][1]>
-        <[uint][Year][1979]>
-        <[tmvector2d][FlapSettings][ (0.0 0.0) (0.2 0.174533) (0.4 0.349066) (0.6 0.523599) (0.8 0.698132) (1.0 0.872665) ]>		
-        <[string8][FlapQualifier][]>
+        <[float64][WingSpan]          [12.0]>
+        <[uint]   [Year]              [1979]>
+        <[uint]   [UnitsBuilt]        [22]>
+        <[uint]   [EngineCount]       [1]>
+        <[float64][EnginePower]       [194000]>
+        <[float64][MinimumAirspeed]   [29.0]>
+        <[float64][ApproachAirspeed]  [30.4]>
+        <[float64][CruiseAirspeed]    [30.0]>
+        <[float64][CruiseAltitude]    [1826.0]>
+        <[float64][CruiseSpeed]       [66.5]>
+        <[float64][MaximumAirspeed]   [70.0]>
+        <[float64][MaximumAltitude]   [4275.0]>
+        <[float64][MaximumSpeed]      [70.0]>
+        <[float64][MaximumRange]      [1056000.0]>
+        <[tmvector2d][FlapAirspeedRange][ 28.0 55.0 ]>
+        <[tmvector2d][NormalAirspeedRange][ 29.0 57.5 ]>
+        <[tmvector2d][CautionAirspeedRange][ 57.5 70.0 ]>
+        <[tmvector2d][FlapSettings][ (0.00 0.000000) (0.20 0.174533) (0.40 0.349066) (0.60 0.523599) (0.80 0.698132) (1.00 0.872665) ]>
+        <[string8][FlapQualifier][ ]>
+        <[string8][Tags][ airplane piston flaps general_aviation ]>
+        <[string8][Pilot][]>
         <[string8][Tags][ airplane piston general_aviation gear flaps ]>
-		<[string8][Pilot][]>
+        <[string8][Pilot][]>
     >
 >
