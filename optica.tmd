@@ -355,12 +355,12 @@
             // bodies
             <[aerofuselage][FuselageAero][]
                 <[string8][Body][Fuselage]>
-                <[float64][StationX][ 2.992 2.750 2.400 2.105 1.187 0.892 0.581 0.391 ]>
-                <[float64][StationY][ 0.000 0.000 -0.000 0.000 0.000 0.000 0.000 -0.000 ]>
-                <[float64][StationZ][ -0.296 -0.205 -0.127 -0.042 0.064 0.086 0.083 0.087 ]>
-                <[float64][StationWidth][ 0.010 1.188 1.470 1.719 1.370 1.136 0.944 0.885 ]>
-                <[float64][StationHeight][ 0.000 1.062 1.475 1.631 1.509 1.391 1.244 1.100 ]>
-                <[uint32][StationShape][ 0 0 0 0 0 0 0 0 ]>
+                <[float64][StationX][ 3.0000 2.7241	2.3828	1.9644	1.3368	0.9184	0.4373	-0.4051	-0.5051	-1.2796	-2.0915 ]>
+                <[float64][StationY][ 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 ]>
+                <[float64][StationZ][ -0.343	-0.26935	-0.17995	-0.08825	-0.0113	0.01785	0.0399	0.0399	0.0399	0.0256	0.0399 ]>
+                <[float64][StationWidth][ 0.1	1.2404	1.663	1.8174	1.4778	1.272	0.9124	0.6998	0.9804	0.918	0.475 ]>
+                <[float64][StationHeight][ 0.1	1.0685	1.4081	1.5195	1.36	1.1701	0.9124	0.6998	0.6298	0.587	0.1558 ]>
+                <[uint32][StationShape][ 0	0	0	0	0	0	0	0	0	0	0 ]>
                 <[float64][Cdx][ 0.0750 ]>
                 <[float64][Cdy][ 1.0 ]>
                 <[float64][Cdz][ 1.0 ]>
@@ -376,7 +376,7 @@
                 <[float64][StationWidth][ 1.396 1.702 1.896 1.342 ]>
                 <[float64][StationHeight][ 1.496 1.768 1.879 1.353 ]>
                 <[uint32][StationShape][ 0 0 0 0 ]>
-                <[float64][Cdx][ 0.0750 ]>
+                <[float64][Cdx][ 0.0250 ]>
                 <[float64][Cdy][ 1.0 ]>
                 <[float64][Cdz][ 1.0 ]>
                 <[float64][Cly][ 1.2 ]>
@@ -955,7 +955,7 @@
             <[rigidbody][PropellerBody][]
                 <[float64][Mass][17.4]>
                 <[tmvector3d][InertiaLength][ 0.2 1.212 0.2 ]>
-                <[tmvector3d][R0][-0.6 0 0.04]>
+                <[tmvector3d][R0][-0.455 0 0.04]>
                 <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
             >
             <[multibody_joint][PropellerJoint][]
@@ -964,7 +964,7 @@
                 <[float64][Kd][0.0]>
                 <[string8][Body0][Fuselage]>
                 <[string8][Body1][PropellerBody]>
-                <[tmvector3d][R0][-0.6 0 0.04]>
+                <[tmvector3d][R0][-0.455 0 0.04]>
                 <[uint32][Type][0]>
                 <[float64][InitialVelocity][72.0]>
             >
@@ -985,7 +985,7 @@
                 <[float64][AttachedCenterFlap][-0.12]>
             >
             <[propeller][EnginePropeller][]
-                <[tmvector3d][R0][-0.6 0 0.04]>
+                <[tmvector3d][R0][-0.455 0 0.04]>
                 <[tmvector3d][X0][0.9986 0.0 0.05234]>
                 <[tmvector3d][Y0][0.0 1.0 0.0]>
                 <[tmvector3d][Z0][0.0 0.0 1.0]>
@@ -1344,8 +1344,8 @@
                 <[uint32][RotationSpeedID][EnginePropeller.RotationSpeed]>
                 <[uint32][DamageID][EnginePropeller.Damaged]>
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
-                <[tmvector3d][Pivot][-0.6 0 0.04]>
-                <[uint32][BladeNumber][2]>
+                <[tmvector3d][Pivot][-0.455 0 0.04]>
+                <[uint32][BladeNumber][5]>
                 <[float64][Radius][0.606]>
                 <[float64][RotationSpeedFade][80.0]>
                 <[uint32][NumberStops][0]>
@@ -1356,7 +1356,7 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][EnginePropeller.RotationAngle]>
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
-                <[tmvector3d][Pivot][-0.6 0 0.04]>
+                <[tmvector3d][Pivot][-0.455 0 0.04]>
             >
             <[graphics_propeller_blade][PropellerBlades][]
                 <[string8][GeometryList][ Prop ]>
@@ -1366,7 +1366,7 @@
                 <[uint32][RotationSpeedID][EnginePropeller.RotationSpeed]>
                 <[uint32][DamageID][EnginePropeller.Damaged]>
                 <[tmvector3d][Axis][ 1.0 0.0 0.0 ]>
-                <[tmvector3d][Pivot][-0.6 0 0.04]>
+                <[tmvector3d][Pivot][-0.455 0 0.04]>
                 <[float64][Radius][0.606]>
                 <[string8][InputPitch][0.0]>
             >
