@@ -1,7 +1,7 @@
 <[file][][]
     <[object][][]
         <[int][Version][220]>
-        <[vec32array][ContactSpheres][ (2.267 0.2 -1.05 0.15) (-0.3759 1.7 -0.951 0.2121) (-0.3759 -1.7 -0.951 0.2121) ]>
+        <[vec32array][ContactSpheres][ (2.267 0.2 -1.05 0.15) (-0.376 1.7 -0.951 0.212) (-0.376 -1.7 -0.951 0.212) ]>
         <[string8][ICAO][OPCA]>
         <[string8][DisplayName][Edgley Optica]>
         <[string8][DisplayNameFull][Edgley EA-7 Optica]>
@@ -35,8 +35,6 @@
         <[tmvector2d][CautionAirspeedRange][ 57.5 70.0 ]>
         <[tmvector2d][FlapSettings][ (0.00 0.000000) (0.20 0.174533) (0.40 0.349066) (0.60 0.523599) (0.80 0.698132) (1.00 0.872665) ]>
         <[string8][FlapQualifier][ ]>
-        <[string8][Tags][ airplane piston flaps general_aviation ]>
-        <[string8][Pilot][]>
         <[string8][Tags][ airplane piston general_aviation gear flaps ]>
         <[string8][Pilot][]>
     >
