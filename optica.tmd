@@ -287,10 +287,10 @@
             <[output][GroundRollLoadRight][]
                 <[string8][Input][RightWheelHull.Load]>
             >
-			
+		
            // fuel system start
             // max 250l avgas with 0.780 kg per l avgas
-			
+		
             // <[rigidbody][LeftFuelTankMass][]
                 // <[float64][Mass][89.8]>
                 // <[tmvector3d][InertiaLength][ 0.7 0.9 0.2 ]>
@@ -1135,7 +1135,7 @@
             <[output][FuelFlow][]
                 <[string8][Input][Engine.FuelFlow]>
             >
-			
+		
             // throttle
             <[input_lever][ThrottleInput][]
                 <[string8][Message][Controls.Throttle1]>
@@ -1275,7 +1275,7 @@
             >
 
             // engines end
-				
+			
             // gear start
 
             // wheelbrake
@@ -1289,7 +1289,7 @@
             <[input_default][RightBrakeInput][]
                 <[string8][Message][Controls.WheelBrake.Right]>
             >
-			
+		
             //
             // the DR400 only has one brake lever that you pull, not brakes on the pedals
             // therefore combine the wheelbrake inputs from left and right and make an average
