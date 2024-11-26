@@ -8,15 +8,15 @@
         <[list_localized_text][Descriptions][]
             <[localized_text][element][0]
                 <[string8u][Language][en]>
-                <[string8][Text][The Edgley EA-7 Optica is a British light aircraft designed for slow-speed observation work, and intended as a low-cost alternative to helicopters. The Optica has a cruise speed of 130 km/h (70 kn; 81 mph) and a stall speed of 108 km/h (58 kn; 67 mph). Converted from FlightGear by Krzysztof Kaniewski. 3D model by Gary "Buckaroo" Neely.]>
+                <[string8][Text][The Edgley EA-7 Optica is a British light aircraft designed for slow-speed observation work, and intended as a low-cost alternative to helicopters. The Optica has a cruise speed of 130 km/h (70 kn; 81 mph) and a stall speed of 108 km/h (58 kn; 67 mph). Converted from FlightGear by Krzysztof Kaniewski. 3D model by Gary "Buckaroo" Neely. VR ready]>
             >
             <[localized_text][element][1]
                 <[string8u][Language][de]>
-                <[string8][Text][Die Edgley EA7 Optica ist ein Flugzeug des britischen Herstellers Edgley Aircraft. Das auffällige Aussehen des Cockpits beruht auf seiner Bestimmung als Luftbeobachtungsflugzeug. Bei der Auslegung lag der Schwerpunkt auf guten Langsamflugeigenschaften sowie optimalen Sichtverhältnissen für die Besatzung. Konvertiert von FlightGear durch Krzysztof Kaniewski. 3d-Modell erstellt von Gary "Buckaroo" Neely.]>
+                <[string8][Text][Die Edgley EA7 Optica ist ein Flugzeug des britischen Herstellers Edgley Aircraft. Das auffällige Aussehen des Cockpits beruht auf seiner Bestimmung als Luftbeobachtungsflugzeug. Bei der Auslegung lag der Schwerpunkt auf guten Langsamflugeigenschaften sowie optimalen Sichtverhältnissen für die Besatzung. Konvertiert von FlightGear durch Krzysztof Kaniewski. 3d-Modell erstellt von Gary "Buckaroo" Neely. VR-kompatibel]>
             >
             <[localized_text][element][2]
                 <[string8u][Language][pl]>
-                <[string8][Text][Edgley EA-7 Optica to brytyjski lekki samolot przeznaczony do prowadzenia obserwacji z małą prędkością, stanowiący tanią alternatywę dla śmigłowców. Optica osiąga prędkość przelotową 130 km/h (70 kn; 81 mph) i prędkość przeciągnięcia 108 km/h (58 kn; 67 mph). Przerobiony z FlightGear przez Krzysztofa Kaniewskiego. Model 3D autorstwa Gary'ego „Buckaroo” Neely.]>
+                <[string8][Text][Edgley EA-7 Optica to brytyjski lekki samolot przeznaczony do prowadzenia obserwacji z małą prędkością, stanowiący tanią alternatywę dla śmigłowców. Optica osiąga prędkość przelotową 130 km/h (70 kn; 81 mph) i prędkość przeciągnięcia 108 km/h (58 kn; 67 mph). Przerobiony z FlightGear przez Krzysztofa Kaniewskiego. Model 3D autorstwa Gary'ego „Buckaroo” Neely. VR ready]>
             >
         >
         <[float64][MaximumTakeoffMass][1315.0]>
@@ -40,6 +40,6 @@
         <[list_vector2_float64][[FlapSettings][ (0.00 0.0) (0.20 0.174533) (0.40 0.349066) (0.60 0.523599) (0.80 0.698132) (1.00 0.872665) ]>
         <[string8][FlapQualifier][ ]>
         <[string8][Tags][ airplane piston general_aviation gear flaps ]>
-        <[string8][Pilot][]>
+        <[string8][Pilot][pilot_robert]>
     >
 >
