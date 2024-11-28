@@ -7,37 +7,37 @@
                 <[float64][Value][0.4]>
             >
 
-            <[input_lever][MixtureInput][0]
+            <[input_lever][MixtureInput][]
                 <[float64][Value][1.0]>
             >
 
             // flaps down
-            <[input_lever][FlapsInput][0]
+            <[input_lever][FlapsInput][]
                 <[float64][Value][1.0]>
             >
 
             // trim
-            <[input_default][PitchTrim][155]
+            <[input_default][PitchTrim][]
                 <[float64][Value][-0.284]>
             >
-            <[servoclassic][ServoElevator][0]
+            <[servoclassic][ServoElevator][]
                 <[float64][Position][-0.039]>
             >
 
             // lights
-            <[input_switch][StrobeLightSwitch][0]
+            <[input_switch][StrobeLightSwitch][]
                 <[float64][Value][1.0]>
             >
-            <[input_switch][BeaconLightSwitch][0]
+            <[input_switch][BeaconLightSwitch][]
                 <[float64][Value][1.0]>
             >
-            <[input_switch][NavigationLightSwitch][0]
+            <[input_switch][NavigationLightSwitch][]
                 <[float64][Value][1.0]>
             >
-            <[input_switch][LandingLightSwitch][0]
+            <[input_switch][LandingLightSwitch][]
                 <[float64][Value][1.0]>
             >
-            <[input_switch][TaxiLightSwitch][0]
+            <[input_switch][TaxiLightSwitch][]
                 <[float64][Value][1.0]>
             >
         >

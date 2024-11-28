@@ -2,8 +2,7 @@
     <[modelmanager][][]
         <[pointer_list_tmcontrol][ControlObjects][]
 		
-
-			
+		
             // flight controls
             <[control_input][StickElevator][]
                 <[uint32][InputID][ElevatorPosition.Output]>
