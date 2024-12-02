@@ -969,7 +969,7 @@
                 <[string8][Input][RudderInput.Output]>
                 <[float64][Speed][2.0]>
                 <[float64][P0][0.0]>
-                <[float64][P1][[0.52]>
+                <[float64][P1][0.52]>
             >
             <[output_free][ServoSteeringOutput][]
                 <[string8][Input][ServoSteering.Output]>
