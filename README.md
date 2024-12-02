@@ -3,6 +3,7 @@ The Edgley EA-7 Optica is a British light aircraft designed for slow-speed obser
 
 This free add-on for AeroflyFS1 2015, then for AeroflyFS2 2019, and then for AeroflyFS4 2022 was created by Krzysztof Kaniewski,
 Original 3D model was created by Gary "Buckaroo" Neely, Sept 2011. Thanks to him
+Thanks also to jayeye2011 for tests and remarks
  
  Some features may not work as intended and this aircraft could crash your Aerofly FS4. 
  Use it at your own risk!
