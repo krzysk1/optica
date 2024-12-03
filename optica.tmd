@@ -2499,25 +2499,14 @@
             >
         // Panel
             <[rigidbodygraphics][Instruments][]
-                <[string8][GeometryList][ ASIFace Bezel
-                    AircraftSymbol AiNewBezel Knob Reference
-                    HiBezel CompassPoints KnobHdg Needle
-                    ALTFace AltBezel
-                    TurnBankBezel TBBox TBFace
-                    VsiBezel VSIFace
-                    RmiBezel RmiCompassPoints Needle1 Needle2
-                    CdiBezel KnobOBS
-                    AdfBezel AdfCompassPoints AdfCompassRose AdfKnobHdg
-                    FlapsBezel Face
-                    Clock50mmBezel ClockFace
-                    ManpressBezel ManpressFace
-                    RpmBezel RpmFace
-                    CyltempBezel CyltempFace
-                    FuelPressureBezel FuelPressureFace
-                    AmpsBezel AmpsFace Switch
-                    RockerSwitchBezel
-                    CompassMagneticBezel Interior
-                    Kma24Bezel BtnMkr BtnMkrA BtnMkrAOn BtnMkrM BtnMkrMOn BtnMkrO BtnMkrOOn Btns Kma24Knob
+                <[string8][GeometryList][ ASIFace Bezel AircraftSymbol AiNewBezel Knob Reference
+                    HiBezel CompassPoints KnobHdg Needle ALTFace AltBezel TurnBankBezel TBBox TBFace
+                    VsiBezel VSIFace RmiBezel RmiCompassPoints Needle1 Needle2
+                    CdiBezel KnobOBS AdfBezel AdfCompassPoints AdfCompassRose AdfKnobHdg
+                    FlapsBezel Face Clock50mmBezel ClockFace
+                    ManpressBezel ManpressFace RpmBezel RpmFace CyltempBezel CyltempFace
+                    FuelPressureBezel FuelPressureFace AmpsBezel AmpsFace Switch RockerSwitchBezel
+                    CompassMagneticBezel Interior Kma24Bezel BtnMkr BtnMkrA BtnMkrAOn BtnMkrM BtnMkrMOn BtnMkrO BtnMkrOOn Btns Kma24Knob
                     Kx155Bezel CommKnob1 CommKnob2 CommSbyDigit1 CommSbyDigit2 CommSbyDigit3 CommSbyDigit4 CommSbyDigit5 CommSelDigit1 CommSelDigit2 CommSelDigit3 CommSelDigit4 CommSelDigit5 CommTFR Decimals KnobIdent KnobOn NavKnob1 NavKnob2 NavSbyDigit1 NavSbyDigit2 NavSbyDigit3 NavSbyDigit4 NavSbyDigit5 NavSelDigit1 NavSelDigit2 NavSelDigit3 NavSelDigit4 NavSelDigit5 NavTFR
                     CommKnob1224 CommKnob2432 CommSbyDigit1640 CommSbyDigit2661 CommSbyDigit3682 CommSbyDigit4703 CommSbyDigit5724 CommSelDigit1745 CommSelDigit2766 CommSelDigit3787 CommSelDigit4808 CommSelDigit5829 CommTFR850 Decimals903 KnobIdent957 KnobOn1165 NavKnob11373 NavKnob21581 NavSbyDigit11789 NavSbyDigit21810 NavSbyDigit31831 NavSbyDigit41852 NavSbyDigit51873 NavSelDigit11894 NavSelDigit21915 NavSelDigit31936 NavSelDigit41957 NavSelDigit51978 NavTFR1999
                     AdfKnob1 AdfKnob2 AdfSbyDigit1 AdfSbyDigit2 AdfSbyDigit3 AdfSbyDigit4 AdfSelDigit1 AdfSelDigit2 AdfSelDigit3 AdfSelDigit4 Kr87Bezel BtnADF BtnFRQ KnobPwr LabelsGlow
@@ -2703,11 +2692,11 @@
             >
             <[graphics_input][VSI_Needle_Input][]
                 <[uint32][InputID][VerticalSpeedIndicatorNeedle.Output]>
-                <[float64][Scaling][196.848]>
+                <[float64][Scaling][1.96848]>
             >
             <[graphics_linear_interpolation][VSI_Needle_Mapping][]
                 <[string8][Input][VSI_Needle_Input.Output]>
-                <[tmvector2d][Map][(-6000 -2.879793) (-3000 -2.879793) (-2000 -2.094395) (-1000 -1.047198) (0 0.0) (1000 1.047198) (2000 2.094395) (3000 2.879793) (6000 2.879793)]>
+                <[tmvector2d][Map][(-60 -2.879793) (-30 -2.879793) (-20 -2.094395) (-10 -1.047198) (0 0.0) (10 1.047198) (20 2.094395) (30 2.879793) (60 2.879793)]>
             >
             <[hingedbodygraphics][VSI_Needle][]
                 <[string8][GeometryList][ VSINeedle ]>
@@ -2722,7 +2711,6 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][InputID][HeadingAngle.Output]>
-             //   <[float64][Scaling][-0.017453]>
                 <[tmvector3d][Axis][ 0.965926 0.0 -0.258819 ]>
                 <[tmvector3d][Pivot][2.071 0.37 -0.153]>
                 <[float64][Offset][-1.57079625]>
@@ -2748,7 +2736,7 @@
             <[hingedbodygraphics][flaps_Needle][]
                 <[string8][GeometryList][ FlapsNeedle ]>
                 <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>0
+                <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][InputID][ServoFlaps.Output]>
                 <[float64][Scaling][3.926991]>
                 <[tmvector3d][Axis][ 0.97437 0.0 -0.224951 ]>
