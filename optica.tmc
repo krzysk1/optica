@@ -27,16 +27,16 @@
         <[float64][EnginePower]       [194000]>
         <[float64][MinimumAirspeed]   [29.0]>
         <[float64][ApproachAirspeed]  [30.4]>
-        <[float64][CruiseAirspeed]    [30.0]>
+        <[float64][CruiseAirspeed]    [35.0]>
         <[float64][CruiseAltitude]    [1826.0]>
         <[float64][CruiseSpeed]       [66.5]>
         <[float64][MaximumAirspeed]   [70.0]>
         <[float64][MaximumAltitude]   [4275.0]>
         <[float64][MaximumSpeed]      [70.0]>
         <[float64][MaximumRange]      [1056000.0]>
-        <[vector2_float64][FlapAirspeedRange]   [ 28.0 55.0 ]>
-        <[vector2_float64][NormalAirspeedRange] [ 29.0 57.5 ]>
-        <[vector2_float64][CautionAirspeedRange][ 57.5 70.0 ]>
+        <[vector2_float64][FlapAirspeedRange]   [ 27.0 60.0 ]>
+        <[vector2_float64][NormalAirspeedRange] [ 29.0 56.5 ]> 
+        <[vector2_float64][CautionAirspeedRange][ 56.5 70.0 ]>
         <[list_vector2_float64][[FlapSettings][ (0.00 0.0) (0.20 0.174533) (0.40 0.349066) (0.60 0.523599) (0.80 0.698132) (1.00 0.872665) ]>
         <[string8][Tags][ airplane piston general_aviation gear flaps ]>
         <[string8][Pilot][pilot_robert]>

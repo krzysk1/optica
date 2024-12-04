@@ -88,7 +88,7 @@
                 <[vector3_float64][R0][ 1.684  0.2583 -0.2702 ]>
                 <[matrix3_float64][B0][ 0.0 1.0 0.0  -1.0 0.0 0.0  0.0 0.0 1.0 ]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
-                <[float64][StepDistance][0.0035]>
+                <[float64][StepDistance][0.005]>
                 <[string8][InputTransform][ThrottleLeverTransform.Output]>
                 <[control_message][OnStep][]
                     <[string8][Message][Controls.Throttle1]>
@@ -100,12 +100,13 @@
             >
 			// mixture lever
             <[control_input][MixtureLeverInput][]
-                <[uint32][InputID][ServoMixture.Output]>
-                <[float64][Scaling][1.570796]>						
+                <[uint32][InputID][MixtureLever.Output]>
+                <[float64][Scaling][-1.570796]>
+                <[float64][Offset][1.570796]>						
             >
             <[control_rotation][MixtureLeverTransform][]
                 <[string8][Input][MixtureLeverInput.Output]>
-                <[tmvector3d][Axis][0.0 -1.0 0.0]>
+                <[tmvector3d][Axis][ 0.0 -1.0 0.0 ]>
                 <[tmvector3d][Pivot][1.777 0 -0.335]>
             >			
             <[control_cylinder][MixtureLever][2]
@@ -113,7 +114,7 @@
                 <[vector3_float64][R0][ 1.813  0.2237 -0.2834 ]>
                 <[matrix3_float64][B0][ 0.0 1.0 0.0  -1.0 0.0 0.0  0.0 0.0 1.0 ]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
-                <[float64][StepDistance][0.000035]>
+                <[float64][StepDistance][0.000075]>
                 <[string8][InputTransform][MixtureLeverTransform.Output]>
                 <[control_message][OnStep][]
                     <[string8][Message][Controls.Mixture1]>
@@ -234,13 +235,13 @@
 			
 			// fuel pump switch
             <[control_cylinder][SwitchFuelPump][]
-                <[string8][Type][switch]>
-                <[vector3_float64][R0][ 2.009 0.1270 -0.3813 ]>
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 2.009 0.1540 -0.3813 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
                 <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
                 <[float64][StepDistance][0.01]>
                 <[control_message][OnStep][]
-                    <[string8][Message][Controls.FuelPumpLeft]>
+					<[string8][Message][Controls.FuelPump]>
                     <[string8][Qualifiers][step]>
                     <[float64][Value][1.0]>
                 >
@@ -248,15 +249,15 @@
                 <[float64][Length][0.017]>
             >
 			
-			// NOP switches
+			// NOP switch
             <[control_cylinder][SwitchNOP1][]
-                <[string8][Type][switch]>
+                <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][ 1.943 -0.03729 0.4383 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
                 <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
                 <[float64][StepDistance][0.01]>
                 <[control_message][OnStep][]
-                    <[string8][Message][Controls.NOP]>
+                    <[string8][Message][Controls.Inop]>
                     <[string8][Qualifiers][step]>
                     <[float64][Value][1.0]>
                 >
@@ -264,13 +265,13 @@
                 <[float64][Length][0.017]>
             >
             <[control_cylinder][SwitchNOP2][]
-                <[string8][Type][switch]>
+                <[string8][Type][switch toggle]>
                 <[vector3_float64][R0][ 2.002 0.1270 -0.4073 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
                 <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
                 <[float64][StepDistance][0.01]>
                 <[control_message][OnStep][]
-                    <[string8][Message][Controls.NOP]>
+                    <[string8][Message][Controls.Inop2]>
                     <[string8][Qualifiers][step]>
                     <[float64][Value][1.0]>
                 >
@@ -318,7 +319,7 @@
                 <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
                 <[float64][StepDistance][0.01]>
                 <[control_message][OnStep][]
-                    <[string8][Message][Controls.IcingPitotHeat]>
+                    <[string8][Message][Controls.PitotHeat]>
                     <[string8][Qualifiers][step]>
                     <[float64][Value][1.0]>
                 >
@@ -494,7 +495,7 @@
                 <[vector3_float64][Direction][ 0.965886 0.0 0.258969 ]>
                 <[float64][StepAngle][0.1]>
                 <[control_message][OnRotate][]
-                    <[string8][Message][PressureSetting]>
+                    <[string8][Message][Controls.Lighting.Panel]>
                     <[string8][Qualifiers][step]>
                     <[float64][Value][1.0]>
                 >

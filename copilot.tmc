@@ -13,24 +13,47 @@
            <[copilot_flap_info][FlapUp][]
               <[float64][FlapPosition][0.0]>
               <[float64][MinimumSpeed][29.0]>
-              <[float64][OptimumSpeed][51.73]>
+              <[float64][OptimumSpeed][51.5]>
               <[float64][MaximumSpeed][70.0]>
               <[bool][TakeOff][true]>
               <[bool][Landing][true]>
            >
-           <[copilot_flap_info][FlapApproach][]
-              <[float64][FlapPosition][0.5]>
-              <[float64][MinimumSpeed][29.0]>
+           <[copilot_flap_info][Flap10][]
+              <[float64][FlapPosition][0.2]>
+              <[float64][MinimumSpeed][28.0]>
               <[float64][OptimumSpeed][41.4]>
-              <[float64][MaximumSpeed][52.7]>
+              <[float64][MaximumSpeed][60.0]>
               <[bool][TakeOff][true]>
               <[bool][Landing][true]>
            >
+           <[copilot_flap_info][Flap20][]
+              <[float64][FlapPosition][0.4]>
+              <[float64][MinimumSpeed][27.0]>
+              <[float64][OptimumSpeed][40.0]>
+              <[float64][MaximumSpeed][42.5]>
+              <[bool][TakeOff][true]>
+              <[bool][Landing][true]>
+           >
+           <[copilot_flap_info][Flap30][]
+              <[float64][FlapPosition][0.6]>
+              <[float64][MinimumSpeed][26.0]>
+              <[float64][OptimumSpeed][39.0]>
+              <[float64][MaximumSpeed][42.5]>
+              <[bool][TakeOff][true]>
+              <[bool][Landing][true]>
+           >
+           <[copilot_flap_info][Flap40][]
+              <[float64][FlapPosition][0.8]>
+              <[float64][MinimumSpeed][25.0]>
+              <[float64][OptimumSpeed][37.0]>
+              <[float64][MaximumSpeed][42.5]>
+              <[bool][Landing][true]>
+           >		   
            <[copilot_flap_info][FlapFull][]
               <[float64][FlapPosition][1.0]>
-              <[float64][MinimumSpeed][29.0]>
-              <[float64][OptimumSpeed][36.29]>
-              <[float64][MaximumSpeed][42.7]>
+              <[float64][MinimumSpeed][24.0]>
+              <[float64][OptimumSpeed][35.0]>
+              <[float64][MaximumSpeed][42.5]>
               <[bool][Landing][true]>
            >
         >

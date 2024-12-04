@@ -2,13 +2,33 @@
     <[modelmanager][][]
         <[pointer_list_tmuniverse][DynamicObjects][]
 
+			//engine
+            <[input_lever][ThrottleInput][]
+                <[float64][Value][0.0]>
+            >
+            <[input_lever][MixtureLever][]
+                <[float64][Value][0.0]>
+            >
+            <[servolinear][ServoThrottle][]
+                <[float64][Position][0.0]>
+            >
+            <[multibody_joint][PropellerJoint][]		
+                <[float64][Velocity][0.0]>
+            >
+            <[input_discrete][Magnetos][]
+                <[float64][Value][0.0]>
+            >				
+						
             // flaps
             <[input_default][FlapsInput][]
                 <[float64][Value][0.0]>
             >
-
+            <[servoclassic][ServoFlaps][]
+                <[float64][Position][0.0]>
+            >			
+		
             // trim
-            <[input_default][PitchTrim][]
+            <[input_default][ElevatorTrimInput][]
                 <[float64][Value][-0.02]>
             >
             <[input_default][AileronTrimInput][]
@@ -17,12 +37,32 @@
             <[servoclassic][AileronTrim][]
                 <[float64][Position][0.01]>
             >
-
-            // lights
-            <[input_switch][StrobeLightSwitch][]
+			
+			// switches
+            <[input_lever][ParkingBrakeInput][]
+                <[float64][Value][1.0]>
+            >			
+            <[input_switch][MasterBatterySwitch][]
                 <[float64][Value][0.0]>
             >
-            <[input_switch][BeaconLightSwitch][]
+            <[input_switch][PitotHeatSwitch][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][AvionicsSwitch][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][AlternatorSwitch][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][ElectricalFuelPumpSwitch][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][FuelSelectorInput][]
+                <[float64][Value][0.0]>
+            >
+			
+            // lights
+            <[input_switch][StrobeLightSwitch][]
                 <[float64][Value][0.0]>
             >
             <[input_switch][NavigationLightSwitch][]
@@ -34,6 +74,9 @@
             <[input_switch][TaxiLightSwitch][]
                 <[float64][Value][0.0]>
             >
+            <[input_default][PanelLightingKnob][]
+                <[float64][Value][0.0]>
+            >			
         >
     >
 >
