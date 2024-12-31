@@ -16,7 +16,7 @@
               <[float64][OptimumSpeed][51.5]>
               <[float64][MaximumSpeed][70.0]>
               <[bool][TakeOff][true]>
-              <[bool][Landing][true]>
+              <[bool][Landing][false]>
            >
            <[copilot_flap_info][Flap10][]
               <[float64][FlapPosition][0.2]>
@@ -47,6 +47,7 @@
               <[float64][MinimumSpeed][25.0]>
               <[float64][OptimumSpeed][37.0]>
               <[float64][MaximumSpeed][42.5]>
+              <[bool][TakeOff][false]>
               <[bool][Landing][true]>
            >		   
            <[copilot_flap_info][FlapFull][]
@@ -54,6 +55,7 @@
               <[float64][MinimumSpeed][24.0]>
               <[float64][OptimumSpeed][35.0]>
               <[float64][MaximumSpeed][42.5]>
+              <[bool][TakeOff][false]>
               <[bool][Landing][true]>
            >
         >
