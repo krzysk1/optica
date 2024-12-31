@@ -397,7 +397,6 @@
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
                 <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
                 <[float64][StepDistance][0.02]>
-           //     <[string8][InputTransform][FlapsLeverRotation.Output]>
                 <[control_message][OnStep][]
                     <[string8][Message][Controls.Flaps]>
                     <[string8][Qualifiers][step]>
@@ -474,7 +473,7 @@
                 <[string8][Type][lever toggle]>
                 <[vector3_float64][R0][ 1.771 0.168 -0.3351 ]>
                 <[matrix3_float64][B0][ 0.9848077  0.0000000  0.1736482   0.0000000  1.0000000  0.0000000  -0.1736482  0.0000000  0.9848077 ]>
-                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
                 <[float64][StepDistance][0.04]>
                 <[string8][InputTransform][ParkingBrakeRotation.Output]>
                 <[control_message][OnStep][]
