@@ -298,7 +298,7 @@
             >
 
             // fuel
-			
+
             // fuel system start
             // max 250l avgas with 0.780 kg per l avgas
 
@@ -400,7 +400,7 @@
             <[fuel_deprecated_line][MainFuelLine][]
                 <[float64][Pressure][101325.0]>
             >
-			
+
             // engine fuel consumption
             <[fuel_deprecated_leak][FuelLeak][]
                 <[float64][InputFlow][Engine.FuelFlow]>
@@ -784,8 +784,8 @@
                 <[string8][Events][ FlapLeverReleaseSound.Trigger ]>
                 <[float64][Value][0.0]>
                 <[float64][Threshold][0.1]>
-            >			
-			
+            >
+
             <[linear_interpolation][FlapsMapping][]
                 <[string8][Input][FlapsInput.Output]>
                 <[tmvector2d][Map][ (0.0 0.0) (0.2 0.174533) (0.4 0.349066) (0.6 0.523599) (0.8 0.698132) (1.0 0.872665) ]>
@@ -1206,7 +1206,7 @@
                 <[float64][Value][3.0]>
                 <[string8][EventsUp][ MagnetoSwitchSound.Trigger ]>
                 <[string8][EventsDown][ MagnetoSwitchSound.Trigger ]>
-            >			
+            >
             <[output_free][MagnetosOutput][]
                 <[string8][Input][Magnetos.Output]>
             >
@@ -1244,7 +1244,7 @@
             <[sender][SenderStarter1][]
                 <[string8][Input][StarterSwitch.Output]>
                 <[string8][Message][Aircraft.Starter1]>
-            >			
+            >
             <[electrical_starter][Starter][]
                 <[string8][InputVoltage][StarterBus.Output]>
                 <[string8][AddLoad][StarterBus.AddLoad]>
@@ -1447,7 +1447,7 @@
             >
 
             // fuel line after fuel pump
-		
+
             <[input_switch][PitotHeatSwitch][]
                 <[string8][Message][Controls.PitotHeat]>
                 <[string8][Events][ SwitchSound.Trigger ]>
@@ -1473,7 +1473,7 @@
                 <[string8][AddLoad][MainBus.AddLoad]>
                 <[float64][MinimumVoltage][10.0]>
                 <[float64][RatedCurrent][2.0]>
-            >				
+            >
             // battery bus end
 
 
@@ -1639,7 +1639,7 @@
                 <[float64][Radius][0.0876]>
                 <[float64][Limit][0.017]>
                 <[float64][Damping][4.0]>
-            >				
+            >
             <[output][BalanceIndicatorDeflection][]
                 <[string8][Input][BalanceIndicator.Output]>
             >
@@ -1821,7 +1821,7 @@
                 <[string8][Input][PanelLighting.Output]>
             >
 
-            // instrument lighting start			
+            // instrument lighting start
 
             // Inop switches
             <[input_switch][InopSwitch][]
@@ -1829,14 +1829,14 @@
                 <[string8][Events][ OverheadSwitchSound.Trigger ]>
                 <[string8][EventsRelease][ OverheadSwitchSound.Trigger ]>
                 <[float64][Value][0.0]>
-            >	
+            >
             <[input_switch][Inop2Switch][]
                 <[string8][Message][Controls.Inop2]>
                 <[string8][Events][ SwitchSound.Trigger ]>
                 <[string8][EventsRelease][ SwitchSound.Trigger ]>
                 <[float64][Value][0.0]>
-            >			
-			
+            >
+
             <[event_sound][ButtonSound][]
             >
             <[event_sound][SwitchSound][]
@@ -2379,7 +2379,7 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][InputID][MixtureLever.Output]>
                 <[float64][Scaling][-1.570796]>
-                <[float64][Offset][1.570796]>				
+                <[float64][Offset][1.570796]>
                 <[tmvector3d][Axis][ 0.0 -1.0 0.0 ]>
                 <[tmvector3d][Pivot][1.777 0 -0.335]>
             >
@@ -2724,7 +2724,7 @@
                 <[string8][InputID][BalanceIndicatorDeflection.Output]>
                 <[tmvector3d][Axis][ 0.965926 0.0 -0.258819 ]>
                 <[tmvector3d][Pivot][2.092 0.37 0.23]>
-                <[float64][Scaling][0.2]>			
+                <[float64][Scaling][0.2]>
             >
             <[graphics_input][VSI_Needle_Input][]
                 <[uint32][InputID][VerticalSpeedIndicatorNeedle.Output]>
@@ -5228,7 +5228,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][cranking.wav]>
             >
-			
+
             // engine loop
             <[soundinput][RotationSpeed][]
                 <[uint32][InputID][RotationSpeed.Output]>
@@ -5518,7 +5518,7 @@
                 <[float64][Radius][0.5]>
                 <[float64][Range][4.0]>
                 <[bool][External][false]>
-            >			
+            >
         >
     >
 >
