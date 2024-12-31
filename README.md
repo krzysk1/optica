@@ -8,13 +8,19 @@ Thanks also to jayeye2011 for tests and remarks
  Some features may not work as intended and this aircraft could crash your Aerofly FS4. 
  Use it at your own risk!
 
-Installation
+# Installation
 
 1. Unzip file and move the folder "optica" into the C:\Users\~\Documents\Aerofly FS 4\aircraft folder.
 
-Uninstall
+# Uninstall
 
 1. Delete the folder "optica".
+
+# Resources
+
+https://wiki.flightgear.org/Edgley_Optica
+
+https://en.wikipedia.org/wiki/Edgley_Optica
 
 ========================================================================================================================
 Readme.txt from Gary "Buckaroo" Neely
