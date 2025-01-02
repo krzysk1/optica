@@ -515,7 +515,7 @@
             <[control_rotation][FuelSelectorTranslation][]
                 <[string8][Input][FuelSelectorTravel.Output]>
                 <[tmvector3d][Axis][ 0.0 0.0 -1.0 ]>
-                <[tmvector3d][Pivot][  1.409 0.238 -0.378 ]>
+                <[tmvector3d][Pivot][ 1.409 0.238 -0.378 ]>
             >
             <[control_box][FuelSelector][]
                 <[string8][Type][knob]>
