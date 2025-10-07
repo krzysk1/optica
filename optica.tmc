@@ -15,6 +15,18 @@
                 <[string8][Text][Die Edgley EA7 Optica ist ein Flugzeug des britischen Herstellers Edgley Aircraft. Das auffällige Aussehen des Cockpits beruht auf seiner Bestimmung als Luftbeobachtungsflugzeug. Bei der Auslegung lag der Schwerpunkt auf guten Langsamflugeigenschaften sowie optimalen Sichtverhältnissen für die Besatzung. Konvertiert von FlightGear durch Krzysztof Kaniewski. 3d-Modell erstellt von Gary "Buckaroo" Neely. VR-kompatibel]>
             >
             <[localized_text][element][2]
+                <[string8u][Language][fr]>
+                <[string8][Text][L'Edgley EA7 Optica est un avion du constructeur britannique Edgley Aircraft. L'aspect particulier du cockpit est dû à sa fonction d'avion d'observation aérienne. Lors de sa conception, l'accent a été mis sur de bonnes caractéristiques de vol à basse vitesse et une visibilité optimale pour l'équipage. Converti à partir de FlightGear par Krzysztof Kaniewski. Modèle 3D créé par Gary « Buckaroo » Neely. Compatible VR.]>
+			>
+            <[localized_text][element][3]
+                <[string8u][Language][es]>
+                <[string8][Text][El Edgley EA7 Optica es un avión del fabricante británico Edgley Aircraft. El llamativo aspecto de la cabina se debe a su función como avión de observación aérea. En su diseño se prestó especial atención a las buenas características de vuelo lento y a las condiciones de visibilidad óptimas para la tripulación. Convertido de FlightGear por Krzysztof Kaniewski. Modelo 3D creado por Gary «Buckaroo» Neely. Compatible con VR.]>
+			>
+            <[localized_text][element][4]
+                <[string8u][Language][it]>
+                <[string8][Text][L'Edgley EA7 Optica è un velivolo prodotto dalla casa britannica Edgley Aircraft. L'aspetto particolare della cabina di pilotaggio è dovuto alla sua destinazione d'uso come aereo da ricognizione. Nella progettazione, l'attenzione si è concentrata sulle buone caratteristiche di volo a bassa velocità e sulle condizioni di visibilità ottimali per l'equipaggio. Convertito da FlightGear da Krzysztof Kaniewski. Modello 3D creato da Gary “Buckaroo” Neely. Compatibile con VR.]>
+			>
+            <[localized_text][element][5]
                 <[string8u][Language][pl]>
                 <[string8][Text][Edgley EA-7 Optica to brytyjski lekki samolot przeznaczony do prowadzenia obserwacji z małą prędkością, stanowiący tanią alternatywę dla śmigłowców. Optica osiąga prędkość przelotową 130 km/h (70 kn; 81 mph) i prędkość przeciągnięcia 108 km/h (58 kn; 67 mph). Przerobiony z FlightGear przez Krzysztofa Kaniewskiego. Model 3D autorstwa Gary'ego „Buckaroo” Neely. VR ready]>
             >
