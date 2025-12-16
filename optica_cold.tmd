@@ -2,7 +2,7 @@
     <[modelmanager][][]
         <[pointer_list_tmuniverse][DynamicObjects][]
 
-			//engine
+            //engine
             <[input_lever][ThrottleInput][]
                 <[float64][Value][0.0]>
             >
@@ -12,21 +12,21 @@
             <[servolinear][ServoThrottle][]
                 <[float64][Position][0.0]>
             >
-            <[multibody_joint][PropellerJoint][]		
+            <[multibody_joint][PropellerJoint][]
                 <[float64][Velocity][0.0]>
             >
             <[input_discrete][Magnetos][]
                 <[float64][Value][0.0]>
-            >				
-						
+            >
+
             // flaps
             <[input_default][FlapsInput][]
                 <[float64][Value][0.0]>
             >
             <[servoclassic][ServoFlaps][]
                 <[float64][Position][0.0]>
-            >			
-		
+            >
+
             // trim
             <[input_default][ElevatorTrimInput][]
                 <[float64][Value][-0.02]>
@@ -37,11 +37,11 @@
             <[servoclassic][AileronTrim][]
                 <[float64][Position][0.01]>
             >
-			
-			// switches
+
+            // switches
             <[input_lever][ParkingBrakeInput][]
                 <[float64][Value][1.0]>
-            >			
+            >
             <[input_switch][MasterBatterySwitch][]
                 <[float64][Value][0.0]>
             >
@@ -60,7 +60,7 @@
             <[input_switch][FuelSelectorInput][]
                 <[float64][Value][0.0]>
             >
-			
+
             // lights
             <[input_switch][StrobeLightSwitch][]
                 <[float64][Value][0.0]>
@@ -76,7 +76,7 @@
             >
             <[input_default][PanelLightingKnob][]
                 <[float64][Value][0.0]>
-            >			
+            >
         >
     >
 >

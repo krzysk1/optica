@@ -1,6 +1,6 @@
 <[file][][]
     <[modelinformation][][]
-        <[int32][Version][220]>
+        <[int32][Version][230]>
         <[list_vector4_float64][ContactSpheres][ (2.267 0.2 -1.05 0.15) (-0.376 1.7 -0.951 0.212) (-0.376 -1.7 -0.951 0.212) ]>
         <[stringt8c][ICAO][OPCA]>
         <[string8][DisplayName][Edgley Optica]>
@@ -17,35 +17,57 @@
             <[localized_text][element][2]
                 <[string8u][Language][fr]>
                 <[string8][Text][L'Edgley EA7 Optica est un avion du constructeur britannique Edgley Aircraft. L'aspect particulier du cockpit est dû à sa fonction d'avion d'observation aérienne. Lors de sa conception, l'accent a été mis sur de bonnes caractéristiques de vol à basse vitesse et une visibilité optimale pour l'équipage. Converti à partir de FlightGear par Krzysztof Kaniewski. Modèle 3D créé par Gary « Buckaroo » Neely. Compatible VR.]>
-			>
+            >
             <[localized_text][element][3]
                 <[string8u][Language][es]>
                 <[string8][Text][El Edgley EA7 Optica es un avión del fabricante británico Edgley Aircraft. El llamativo aspecto de la cabina se debe a su función como avión de observación aérea. En su diseño se prestó especial atención a las buenas características de vuelo lento y a las condiciones de visibilidad óptimas para la tripulación. Convertido de FlightGear por Krzysztof Kaniewski. Modelo 3D creado por Gary «Buckaroo» Neely. Compatible con VR.]>
-			>
+            >
             <[localized_text][element][4]
                 <[string8u][Language][it]>
                 <[string8][Text][L'Edgley EA7 Optica è un velivolo prodotto dalla casa britannica Edgley Aircraft. L'aspetto particolare della cabina di pilotaggio è dovuto alla sua destinazione d'uso come aereo da ricognizione. Nella progettazione, l'attenzione si è concentrata sulle buone caratteristiche di volo a bassa velocità e sulle condizioni di visibilità ottimali per l'equipaggio. Convertito da FlightGear da Krzysztof Kaniewski. Modello 3D creato da Gary “Buckaroo” Neely. Compatibile con VR.]>
-			>
+            >
             <[localized_text][element][5]
                 <[string8u][Language][pl]>
                 <[string8][Text][Edgley EA-7 Optica to brytyjski lekki samolot przeznaczony do prowadzenia obserwacji z małą prędkością, stanowiący tanią alternatywę dla śmigłowców. Optica osiąga prędkość przelotową 130 km/h (70 kn; 81 mph) i prędkość przeciągnięcia 108 km/h (58 kn; 67 mph). Przerobiony z FlightGear przez Krzysztofa Kaniewskiego. Model 3D autorstwa Gary'ego „Buckaroo” Neely. VR ready]>
             >
         >
-        <[float64][MaximumTakeoffMass][1315.0]>
-        <[float64][WingSpan]          [12.0]>
-        <[uint32] [Year]              [1979]>
-        <[uint32] [UnitsBuilt]        [22]>
-        <[uint32] [EngineCount]       [1]>
-        <[float64][EnginePower]       [194000]>
-        <[float64][MinimumAirspeed]   [29.0]>
-        <[float64][ApproachAirspeed]  [30.4]>
-        <[float64][CruiseAirspeed]    [35.0]>
-        <[float64][CruiseAltitude]    [1826.0]>
-        <[float64][CruiseSpeed]       [66.5]>
-        <[float64][MaximumAirspeed]   [70.0]>
-        <[float64][MaximumAltitude]   [4275.0]>
-        <[float64][MaximumSpeed]      [70.0]>
-        <[float64][MaximumRange]      [1056000.0]>
+        <[float64][MaximumTaxiMass]      [1315.0]>
+        <[float64][MaximumTakeoffMass]   [1315.0]>
+        <[float64][MaximumLandingMass]   [1315.0]>
+        <[float64][MaximumZeroFuelMass]  [1315.0]>
+        <[float64][OperatingEmptyMass]   [948.0]>
+        <[float64][MaximumFuelMass]      [195.0]> // 250 L (66 US gal; 55 imp gal) useful capacity
+        <[float64][MaximumPayload]       [270.0]>
+        <[uint32] [MaximumPersonsOnBoard][3]>
+        <[float64][WingSpan]             [12.0]>
+        <[float64][WingArea]             [15.84]>
+        <[float64][Length]               [8.15]>
+        <[float64][Height]               [2.31]>
+        <[float64][NoseWheelPosition]    [2.267]>
+        <[float64][MainGearWidth]        [3.4]>
+        <[uint32] [Year]                 [1979]>
+        <[uint32] [UnitsBuilt]           [25]>
+        <[uint32] [EngineCount]          [1]>
+        <[float64][EnginePower]          [194000]> // Textron Lycoming IO-540-V4A5D, 190 kW (260 hp)
+        <[float64][MinimumAirspeed]      [29.0]> // 108 km/h (67 mph, 58 kn) outboard flaps up
+        <[float64][ApproachAirspeed]     [30.4]>
+        <[float64][CruiseAirspeed]       [35.0]> // 130 km/h (81 mph, 70 kn) (loiter speed, 40% power)
+        <[float64][CruiseAltitude]       [1826.0]>
+        <[float64][CruiseSpeed]          [66.5]>
+        <[float64][MaximumAirspeed]      [70.0]> // 213 km/h (132 mph, 115 kn) Never exceed speed: 259 km/h (161 mph, 140 kn)
+        <[float64][MaximumAltitude]      [4275.0]> // 4,275 m (14,026 ft)
+        <[float64][MaximumSpeed]         [70.0]>
+        <[float64][MaximumRange]         [1056000.0]> // 1,056 km (656 mi, 570 nmi) at 130 km/h (81 mph; 70 kn) (45-minute reserves)
+        <[float64][MaximumLoadRange]     [1056000.0]>
+        <[float64][MaximumFuelRange]     [1056000.0]>
+        <[float64][MaximumFerryRange]    [1056000.0]>
+        <[float64][MaximumGlideRatio]    [9.0]>
+        <[float64][TakeoffDistance]      [282.88]>
+        <[float64][LandingDistance]      [221.92]>
+        <[float64][FuelDensity]          [780.0]>
+        <[float64][MACLeadingEdge]       [0.455]>
+        <[float64][MACLength]            [0.5]>
+        <[float64][MACOptimumCG]         [0.2]>		
         <[vector2_float64][FlapAirspeedRange]   [ 27.0 60.0 ]>
         <[vector2_float64][NormalAirspeedRange] [ 29.0 56.5 ]>
         <[vector2_float64][CautionAirspeedRange][ 56.5 70.0 ]>

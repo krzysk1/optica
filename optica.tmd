@@ -4,7 +4,7 @@
     // 3D model by Gary "Buckaroo" Neely
     // Converted from FlightGear by krzysk(at)wp.pl
     // The model is currently licensed under Creative Commons "CC-BY-NC-SA"
-    // Date: Nov 2015 to Dec 2022; May 2023 (Aerofly FS4); Nov 2024
+    // Date: Nov 2015 to Dec 2022; May 2023 (Aerofly FS4); Nov 2024; Dec 2025
     //-------------------------------------
 
     <[modelmanager][][]
@@ -64,15 +64,14 @@
 
             // rigidbody systems start
 
-            // airframe  mass: 1130.8  cm=(-0.133 0.002 -0.012)
             <[rigidbody][Fuselage][]
-                <[float64][Mass][789.4]>
+                <[float64][Mass][397.3]>
                 <[tmvector3d][InertiaLength][4.0 1.7 1.7]>
-                <[tmvector3d][R0][-0.100 0.000 -0.0882]>
+                <[tmvector3d][R0][-0.1 0.000 -0.0882]>
                 <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
             >
             <[rigidbody][LeftWing][]
-                <[float64][Mass][141.0]>
+                <[float64][Mass][121.0]>
                 <[tmvector3d][InertiaLength][ 1.400 6.000 0.150 ]>
                 <[tmvector3d][R0][-0.272 2.996 0.067]>
                 <[tmmatrix3d][B0][0.999965 -0.008344 0.0 0.008344 0.998595 0.052336 0.0 -0.052336 0.998630]>
@@ -87,7 +86,7 @@
                 <[uint32][Type][0]>
             >
             <[rigidbody][RightWing][]
-                <[float64][Mass][141.0]>
+                <[float64][Mass][121.0]>
                 <[tmvector3d][InertiaLength][ 1.400 6.000 0.150 ]>
                 <[tmvector3d][R0][-0.272 -2.996 0.067]>
                 <[tmmatrix3d][B0][0.999965 0.008344 0.0 -0.008344 0.998595 -0.052336 0.0 0.052336 0.998630]>
@@ -101,21 +100,21 @@
                 <[float64][Kd][28200.0]>
                 <[uint32][Type][0]>
             >
-            // <[rigidbody][EngineBody][]
-                // <[float64][Mass][249.3]>
-                // <[tmvector3d][InertiaLength][ 0.9 0.7 0.4 ]>
-                // <[tmvector3d][R0][-1.3 0 0]>
-                // <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
-            // >
-            // <[multibody_joint][JointFuselageEngine][]
-                // <[string8][Body0][Fuselage]>
-                // <[string8][Body1][EngineBody]>
-                // <[tmvector3d][X0][0.0 0.0 1.0]>
-                // <[float64][Kp][1990000]>
-                // <[float64][Kd][39800]>
-                // <[tmvector3d][R0][-1.3 0 0.5]>
-                // <[uint32][Type][1]>
-            // >
+            <[rigidbody][EngineBody][]
+                <[float64][Mass][249.3]>
+                <[tmvector3d][InertiaLength][ 0.9 0.7 0.4 ]>
+                <[tmvector3d][R0][-1.3 0 0]>
+                <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
+            >
+            <[multibody_joint][JointFuselageEngine][]
+                <[string8][Body0][Fuselage]>
+                <[string8][Body1][EngineBody]>
+                <[tmvector3d][X0][0.0 0.0 1.0]>
+                <[float64][Kp][1990000]>
+                <[float64][Kd][39800]>
+                <[tmvector3d][R0][-1.3 0 0.5]>
+                <[uint32][Type][1]>
+            >
             <[collisionhull][CollisionFuselage][]
                 <[float64][K][2799000]>
                 <[float64][D][27990]>
@@ -143,7 +142,6 @@
             >
             // Gears
 
-
             // FrontGear
             <[rigidbody][FrontGearUpper][]
                 <[float64][Mass][2.0]>
@@ -156,7 +154,7 @@
                 <[string8][Body1][FrontGearUpper]>
                 <[tmvector3d][X0][0.0 0.0 -1.0]>
                 <[tmvector3d][R0][2.267 0.2 -0.5]>
-                <[float64][Kp][15000.0]>
+                <[float64][Kp][1500.0]>
                 <[float64][Kd][100.0]>
                 <[uint32][Type][0]>
                 <[string8][InputPosition][ServoSteering.Output]>
@@ -179,14 +177,14 @@
             <[oleo_pneumatic_damper][NoseGearDamper][]
                 <[string8][Body0][FrontGearUpper]>
                 <[string8][Body1][FrontGear]>
-                <[tmvector3d][R0][ 2.267 0.0  0.03 ]>
-                <[tmvector3d][R1][ 2.267 0.0 -0.40 ]>
+                <[tmvector3d][R0][ 2.267 0.2  0.03 ]>
+                <[tmvector3d][R1][ 2.267 0.2 -0.40 ]>
                 <[float64][LimitLengthMin][0.30]>
                 <[float64][LimitLengthMax][0.52]>
                 <[float64][LimitSpring][500000.0]>
-                <[float64][LimitDamping][5000.0]>
+                <[float64][LimitDamping][15000.0]>
                 <[float64][ForceExtended][100.0]>
-                <[float64][DampingExtended][800.0]>
+                <[float64][DampingExtended][1800.0]>
                 <[float64][ForceCompressed][9500.0]>
                 <[float64][DampingCompressed][19500.0]>
             >
@@ -201,7 +199,7 @@
                 <[string8][Body1][LeftGear]>
                 <[tmvector3d][X0][0.0 0.0 1.0]>
                 <[float64][Kp][200000]>
-                <[float64][Kd][500]>
+                <[float64][Kd][1500]>
                 <[tmvector3d][R0][-0.38 1.7 0.045]>
                 <[uint32][Type][1]>
             >
@@ -216,7 +214,7 @@
                 <[string8][Body1][RightGear]>
                 <[tmvector3d][X0][0.0 0.0 1.0]>
                 <[float64][Kp][200000]>
-                <[float64][Kd][500]>
+                <[float64][Kd][1500]>
                 <[tmvector3d][R0][-0.38 -1.7 0.045]>
                 <[uint32][Type][1]>
             >
@@ -301,39 +299,49 @@
 
             // fuel system start
             // max 250l avgas with 0.780 kg per l avgas
-
-            // <[rigidbody][LeftFuelTankMass][]
-                // <[float64][Mass][89.8]>
-                // <[tmvector3d][InertiaLength][ 0.7 0.9 0.2 ]>
-                // <[tmvector3d][R0][-0.08 2.88 0.12]>
-                // <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
-            // >
-            // <[multibody_joint][JointLeftWingFuelTank][]
-                // <[string8][Body0][LeftWing]>
-                // <[string8][Body1][LeftFuelTankMass]>
-                // <[tmvector3d][X0][1.0 0.0 0.0]>
-                // <[tmvector3d][R0][-0.08 2.88 0.12]>
-                // <[float64][Kp][50000.0]>
-                // <[float64][Kd][1000.0]>
-                // <[uint32][Type][0]>
-                // <[string8][InputLock][1.0]>
-            // >
-            // <[rigidbody][RightFuelTankMass][]
-                // <[float64][Mass][89.8]>
-                // <[tmvector3d][InertiaLength][ 0.7 0.9 0.2 ]>
-                // <[tmvector3d][R0][-0.08 -2.88 0.12]>
-                // <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
-            // >
-            // <[multibody_joint][JointRightWingFuelTank][]
-                // <[string8][Body0][RightWing]>
-                // <[string8][Body1][RightFuelTankMass]>
-                // <[tmvector3d][X0][1.0 0.0 0.0]>
-                // <[tmvector3d][R0][-0.08 -2.88 0.12]>
-                // <[float64][Kp][50000.0]>
-                // <[float64][Kd][1000.0]>
-                // <[uint32][Type][0]>
-                // <[string8][InputLock][1.0]>
-            // >
+			
+            <[fuel_tank][LeftFuelTank][]
+                <[string8][Body][LeftWing]>
+                <[float64][Capacity][125.0]>
+                <[float64][Mass][89.8]>
+                <[tmvector3d][Outlet0][ 0.10 0.66 -0.1 ]>
+                <[fuel_tank_stations][Stations][]
+                    <[fuel_tank_station][][]
+                        <[tmvector3d][R0][ -0.08 0.66 0.004 ]>
+                        <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                        <[tmvector3d][Y0][ 0.0 0.0 1.0 ]>
+                        <[tmvector3d][Dimensions][ 0.7 0.2 ]>
+                    >
+                    <[fuel_tank_station][][]
+                        <[tmvector3d][R0][ -0.08 1.56 0.098 ]>
+                        <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                        <[tmvector3d][Y0][ 0.0 0.0 1.0 ]>
+                        <[tmvector3d][Dimensions][ 0.7 0.15 ]>
+                    >
+                >
+                <[tmvector2d][MassMap][ ( 0.0 0.0 ) ( 179.6 89.8 ) ]>
+            >
+            <[fuel_tank][RightFuelTank][]
+                <[string8][Body][RightWing]>
+                <[float64][Capacity][125.0]>
+                <[float64][Mass][89.8]>
+                <[tmvector3d][Outlet0][ 0.10 -0.66 -0.1 ]>
+                <[fuel_tank_stations][Stations][]
+                    <[fuel_tank_station][][]
+                        <[tmvector3d][R0][ -0.08 -0.66 0.004 ]>
+                        <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                        <[tmvector3d][Y0][ 0.0 0.0 1.0 ]>
+                        <[tmvector3d][Dimensions][ 0.7 0.15 ]>
+                    >
+                    <[fuel_tank_station][][]
+                        <[tmvector3d][R0][ -0.08 -1.56 0.098 ]>
+                        <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                        <[tmvector3d][Y0][ 0.0 0.0 1.0 ]>
+                        <[tmvector3d][Dimensions][ 0.7 0.2 ]>
+                    >
+                >
+                <[tmvector2d][MassMap][ ( 0.0 0.0 ) ( 179.6 89.8 ) ]>
+            >
 
             // fuel after fuel tank
             <[fuel_deprecated_tank][FuelTank][]
@@ -411,22 +419,15 @@
 
             // payload
 
-            // <[rigidbody][CrewBody][]
-                // <[float64][Mass][170.1]>
-                // <[tmvector3d][InertiaLength][ 0.4 0.9 0.7 ]>
-                // <[tmvector3d][R0][2 0 0]>
-                // <[tmmatrix3d][B0][ 0.965926 0.0 0.258819  0.0 1.0 0.0 -0.258819 0.0 0.965926 ]>
-            // >
-            // <[multibody_joint][JointFuselageCrewBody][]
-                // <[string8][Body0][Fuselage]>
-                // <[string8][Body1][CrewBody]>
-                // <[tmvector3d][X0][0.0 0.0 1.0]>
-                // <[tmvector3d][R0][2 0 0]>
-                // <[float64][Kp][50000.0]>
-                // <[float64][Kd][1000.0]>
-                // <[uint32][Type][0]>
-                // <[string8][InputLock][1.0]>
-            // >
+            <[persons][CrewMass][]
+                <[float64][Mass][70.0]>
+                <[string8][Body][Fuselage]>				
+                <[tmvector3d][InertiaLength][ 0.4 0.9 0.7 ]>
+                <[tmvector3d][R0][2 0 0]>
+                <[tmmatrix3d][B0][ 0.965926 0.0 0.258819  0.0 1.0 0.0 -0.258819 0.0 0.965926 ]>
+                <[float64][MinimumPersons][1.0]>
+                <[float64][MaximumPersons][3.0]>				
+            >
 
             // rigidbody systems end
 

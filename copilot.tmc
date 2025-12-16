@@ -1,9 +1,12 @@
 <[file][][]
     <[hints][][]
         // Edgley Optica
-        <[float64][MaximumTakeOffMass][1315.0]>
+        <[float64][MaximumTakeoffMass][1315.0]>
+        <[float64][DefaultGrossMass][1197.6]>
         <[float64][WingSpan][12.0]>
         <[float64][WingArea][15.84]>
+        <[float64][LEMAC][0.455]>
+        <[float64][MAC][1.5]>
         <[float64][HeightOffset][-1.05]>
         <[float64][NoseWheelPositionX][2.267]>
         <[float64][ApproachSpeed][30.3]>
@@ -15,7 +18,7 @@
               <[float64][MinimumSpeed][29.0]>
               <[float64][OptimumSpeed][51.5]>
               <[float64][MaximumSpeed][70.0]>
-              <[bool][TakeOff][true]>
+              <[bool][Takeoff][true]>
               <[bool][Landing][false]>
            >
            <[copilot_flap_info][Flap10][]
@@ -23,7 +26,7 @@
               <[float64][MinimumSpeed][28.0]>
               <[float64][OptimumSpeed][41.4]>
               <[float64][MaximumSpeed][60.0]>
-              <[bool][TakeOff][true]>
+              <[bool][Takeoff][true]>
               <[bool][Landing][true]>
            >
            <[copilot_flap_info][Flap20][]
@@ -31,7 +34,7 @@
               <[float64][MinimumSpeed][27.0]>
               <[float64][OptimumSpeed][40.0]>
               <[float64][MaximumSpeed][42.5]>
-              <[bool][TakeOff][true]>
+              <[bool][Takeoff][true]>
               <[bool][Landing][true]>
            >
            <[copilot_flap_info][Flap30][]
@@ -39,7 +42,7 @@
               <[float64][MinimumSpeed][26.0]>
               <[float64][OptimumSpeed][39.0]>
               <[float64][MaximumSpeed][42.5]>
-              <[bool][TakeOff][true]>
+              <[bool][Takeoff][true]>
               <[bool][Landing][true]>
            >
            <[copilot_flap_info][Flap40][]
@@ -47,15 +50,15 @@
               <[float64][MinimumSpeed][25.0]>
               <[float64][OptimumSpeed][37.0]>
               <[float64][MaximumSpeed][42.5]>
-              <[bool][TakeOff][false]>
+              <[bool][Takeoff][false]>
               <[bool][Landing][true]>
-           >		   
+           >
            <[copilot_flap_info][FlapFull][]
               <[float64][FlapPosition][1.0]>
               <[float64][MinimumSpeed][24.0]>
               <[float64][OptimumSpeed][35.0]>
               <[float64][MaximumSpeed][42.5]>
-              <[bool][TakeOff][false]>
+              <[bool][Takeoff][false]>
               <[bool][Landing][true]>
            >
         >
